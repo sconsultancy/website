@@ -8,7 +8,7 @@ function Footer() {
       <div className="flex justify-around items-center w-full mt-8 ">
         <div className="">
           <h1 className=" text-2xl text-white tracking-wide  mb-3">
-            {`&#34`}Unleash Your Potential{`&#34`}
+            {`"`}Unleash Your Potential{`"`}
           </h1>
         </div>
         <div>
