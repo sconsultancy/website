@@ -234,7 +234,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <button className=" bg-[#353535] rounded-xl py-2 pt-4 w-[340px] mt-24  flex justify-center text-white text-2xl font-bold tracking-tight">
+              {/* <button className=" bg-[#353535] rounded-xl py-2 pt-4 w-[340px] mt-24  flex justify-center text-white text-2xl font-bold tracking-tight">
                 See More Sites{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +250,7 @@ export default function Home() {
                     clipRule="evenodd"
                   />
                 </svg>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
