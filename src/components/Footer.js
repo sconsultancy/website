@@ -6,11 +6,11 @@ function Footer() {
   return (
     <div className=" bg-[#232526] mt-24 flex flex-col p-10 pb-5 items-center ">
       <div className="flex justify-around items-center w-full mt-8 ">
-        <div className="">
+        {/* <div className="">
           <h1 className=" text-2xl text-white tracking-wide  mb-3">
             "Unleash Your Potential"
           </h1>
-        </div>
+        </div> */}
         <div>
           {/* <div className="flex bottom-14 space-x-8">
             <svg
@@ -48,7 +48,7 @@ function Footer() {
       </div>
 
       <div className="flex mt-16 space-x-10 justify-center ">
-        <div className="flex flex-col justify-center ">
+        {/* <div className="flex flex-col justify-center ">
           <h1 className=" font-medium text-white text-2xl pl-1">SCG</h1>
           <div className=" mt-3 pl-4 flex  justify-between bg-[#2A2F39] rounded-full  ">
             <input
@@ -60,7 +60,7 @@ function Footer() {
               Getting Started
             </button>
           </div>
-        </div>
+        </div> */}
 
         {/* <div className="flex space-x-8 text-white">
           <div className="flex flex-col space-y-3">
@@ -83,13 +83,13 @@ function Footer() {
           </div>
         </div> */}
       </div>
-      <div className="flex w-3/4 justify-between mt-16 text-white opacity-80">
+      {/* <div className="flex w-3/4 justify-between mt-16 text-white opacity-80">
         <div className=" ">SCG</div>
         <div className="flex space-x-5">
           <h3>Terms</h3>
           <h3>Credits</h3>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
