@@ -6,11 +6,11 @@ function Footer() {
   return (
     <div className=" bg-[#232526] mt-24 flex flex-col p-10 pb-5 items-center ">
       <div className="flex justify-around items-center w-full mt-8 ">
-        {/* <div className="">
+        <div className="">
           <h1 className=" text-2xl text-white tracking-wide  mb-3">
             "Unleash Your Potential"
           </h1>
-        </div> */}
+        </div>
         <div>
           {/* <div className="flex bottom-14 space-x-8">
             <svg
