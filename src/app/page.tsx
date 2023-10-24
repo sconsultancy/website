@@ -1,7 +1,7 @@
 "use client";
 
 import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 
 // import HeroForm from "../components/HeroForm";
 import ContactForm from "../components/ContactForm";
@@ -372,7 +372,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 }
