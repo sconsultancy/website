@@ -62,7 +62,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex space-x-8 text-white">
+        {/* <div className="flex space-x-8 text-white">
           <div className="flex flex-col space-y-3">
             <h1 className=" text-xl  font-normal">DESIGN</h1>
             <h3 className="pt-2 opacity-60 text-md">Digital Branding</h3>
@@ -81,7 +81,7 @@ function Footer() {
             <h3 className="opacity-60 text-md">SEO</h3>
             <h3 className="opacity-60 text-md">A-B Testing</h3>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="flex w-3/4 justify-between mt-16 text-white opacity-80">
         <div className=" ">SCG</div>
