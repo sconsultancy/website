@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 // import Hero_Dropdown from "./Hero_Dropdown.js";
 
