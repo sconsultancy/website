@@ -362,7 +362,7 @@ export default function Home() {
               <div className="h-[300px] w-[300px] rounded-full pink_glass absolute -right-[125px] -bottom-[125px]"></div>
             </div>
             {/* right section */}
-            <div className=" ml-20  ">
+            <div className=" ml-20">
               <span className=" pr-10 flex items-center ">
                 <ContactForm></ContactForm>
               </span>
@@ -372,7 +372,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   );
 }
