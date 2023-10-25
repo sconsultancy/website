@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import SignupForm from "./SignupForm";
 import LoginForm from "./LoginForm";
 
-import { dividerClasses } from "@mui/material";
-
 function Modal(props: any) {
   //   console.log(props.isOpen);
 
