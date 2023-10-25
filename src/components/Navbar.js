@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Modal from "./Modal";
 
 function Navbar() {
   const linkList = [
@@ -11,6 +12,24 @@ function Navbar() {
     { name: "Resources", link: "/resources" },
     { name: "Contact Us", link: "/contactus" },
   ];
+  const [isOpen, setIsOpen] = useState(false);
+  const [isSignup, setIsSignup] = useState(true);
+  const handleLogin = async (e) => {
+    setIsOpen(true);
+    setIsSignup(false);
+  };
+
+  const handleSignup = async (e) => {
+    setIsOpen(true);
+    setIsSignup(true);
+  };
+  const closeModal = () => {
+    setIsOpen(false);
+  };
+  const switchType = () => {
+    // setIsOpen(false);
+    setIsSignup(!isSignup);
+  };
   return (
     // <div className="fixed  w-full flex justify-center">
     <div className="flex justify-center pt-3  w-full  self-center fixed z-50 ">
@@ -35,12 +54,24 @@ function Navbar() {
             })}
           </div>
           <div className="flex items-center">
-            <button className=" mx-3 h-[51px] w-[143px] rounded-full  border-[1px] border-black font-semibold text-lg">
+            <button
+              className=" mx-3 h-[51px] w-[143px] rounded-full  border-[1px] border-black font-semibold text-lg"
+              onClick={handleLogin}
+            >
               Login
             </button>
-            <button className=" mx-3 h-[51px] w-[143px] rounded-full bg-black text-white   font-semibold text-lg">
+            <button
+              className=" mx-3 h-[51px] w-[143px] rounded-full bg-black text-white   font-semibold text-lg"
+              onClick={handleSignup}
+            >
               Signup
             </button>
+            <Modal
+              isOpen={isOpen}
+              close={closeModal}
+              isSignup={isSignup}
+              switchType={switchType}
+            ></Modal>
           </div>
         </div>
       </div>

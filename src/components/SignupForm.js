@@ -2,7 +2,7 @@
 
 import React from "react";
 
-function ContactForm(props) {
+function SignupForm(props) {
   const handleFocusInput = (e) => {
     const labels = document.getElementsByTagName("label");
     e.target.style.borderColor = "rgb(30 64 175)";
@@ -29,41 +29,28 @@ function ContactForm(props) {
   };
   return (
     <div className="">
+      <h1 className=" mb-3 text-center text-2xl font-bold text-blue-900">
+        Signup
+      </h1>
       <form action="#" className="flex flex-col space-y-4 pt-3">
         <div className="relative flex flex-col">
           <input
             type="text"
-            id="hero_form_fname"
+            id="hero_form_name"
             className=" border-b-2 outline-none text-[17px] border-b-gray-300 transition-colors  duration-300     h-9  w-full bg-white bg-opacity-5"
             required
-            name="fname"
+            name="name"
             onFocus={handleFocusInput}
             onBlur={handleBlurInput}
           />
           <label
-            htmlFor="hero_form_fname"
+            htmlFor="hero_form_name"
             className="inputLabel absolute bottom-[10px] left-0 text-gray-500 pointer-events-none duration-200  ease-in "
           >
-            First Name
+            Name
           </label>
         </div>
-        <div className="relative flex flex-col">
-          <input
-            type="text"
-            id="hero_form_lname"
-            className=" border-b-2 outline-none text-[17px] border-b-gray-300 transition-colors  duration-300     h-9  w-full bg-white bg-opacity-5"
-            required
-            name="lname"
-            onFocus={handleFocusInput}
-            onBlur={handleBlurInput}
-          />
-          <label
-            htmlFor="hero_form_lname"
-            className="inputLabel absolute bottom-[10px] left-0 text-gray-500 pointer-events-none duration-200  ease-in "
-          >
-            Last Name
-          </label>
-        </div>
+
         <div className="relative pt-[10px]">
           <span className="  flex justify-between  rounded-md  h-9 w-80">
             <input
@@ -90,7 +77,7 @@ function ContactForm(props) {
           <input
             id="hero_form_email"
             type="text"
-            name="hero_form_name"
+            name="hero_form_email"
             className="border-b-2 outline-none text-[17px] border-b-gray-300 transition-colors  duration-300     h-9  w-full bg-white bg-opacity-5"
             onFocus={handleFocusInput}
             onBlur={handleBlurInput}
@@ -102,6 +89,22 @@ function ContactForm(props) {
             Email Id
           </label>
         </div>
+        <div className="relative pt-[10px]">
+          <input
+            id="hero_form_password"
+            type="text"
+            name="hero_form_password"
+            className="border-b-2 outline-none text-[17px] border-b-gray-300 transition-colors  duration-300     h-9  w-full bg-white bg-opacity-5"
+            onFocus={handleFocusInput}
+            onBlur={handleBlurInput}
+          />
+          <label
+            htmlFor="hero_form_password"
+            className="inputLabel absolute bottom-[10px] left-0 text-gray-500 pointer-events-none duration-200  ease-in"
+          >
+            Password
+          </label>
+        </div>
 
         {/* <Hero_Dropdown></Hero_Dropdown> */}
 
@@ -109,11 +112,26 @@ function ContactForm(props) {
           type="submit"
           className="h-10 bg-black bg-opacity-70 font-bold text-white"
         >
-          Request a Call Back
+          Submit
         </button>
       </form>
+      <div className="mt-4 flex items-center flex-col">
+        <div className="  z-30 bg-white w-12 relative text-center top-3 text-opacity-70 text-black font-bold ">
+          OR
+        </div>
+        <div className=" bg-black h-[2px] w-full  opacity-30"></div>
+        {/* <span className=" mt-5 h-9 w-[99px] bg-black"></span> */}
+      </div>
+      <div className=" mt-6">
+        <button className=" p-2 flex w-full items-center justify-center border">
+          <span>
+            <img className=" w-8" src="icon/google.svg" alt="" />
+          </span>
+          Sign up with Google
+        </button>
+      </div>
     </div>
   );
 }
 
-export default ContactForm;
+export default SignupForm;

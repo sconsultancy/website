@@ -1,16 +1,12 @@
 "use client";
 
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-// import HeroForm from "../components/HeroForm";
 import ContactForm from "../components/ContactForm";
 
 export default function Home() {
   return (
     <div className="main_body" style={{ backgroundImage: "url(hero_bg.png)" }}>
-      <Navbar></Navbar>
-
       {/* Hero Section */}
       <div className="flex flex-col items-center  relative top-[270px] pb-[150px] mb-[320px]">
         <div className="light_glass h-[658px] w-[568px] p-12 pt-20 pl-20  rounded-xl relative right-10 z-30 flex flex-col  ">
@@ -35,7 +31,7 @@ export default function Home() {
               className=" bg-black bg-opacity-0  outline-none  font-semibold text-black text-opacity-50 py-4"
             />
             <button className=" bg-black text-white rounded-full w-[149px] h-full text-sm font-medium">
-              Getting Started
+              Get Started
             </button>
           </div>
         </div>
