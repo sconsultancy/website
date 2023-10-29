@@ -9,7 +9,6 @@ function Navbar() {
     { name: "Home", link: "/" },
     { name: "Services", link: "/services" },
     { name: "Blogs", link: "/blogs" },
-    { name: "Resources", link: "/resources" },
     { name: "Contact Us", link: "/contactus" },
   ];
   const [isOpen, setIsOpen] = useState(false);
