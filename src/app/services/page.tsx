@@ -73,7 +73,7 @@ function Services() {
       <div className="flex items-center justify-evenly bg-[#94D5FA] bg-opacity-[0.35] py-32 w-full mt-24">
         {/* <div></div> */}
         <h1 className=" font-semibold  text-6xl w-[367px]">
-          Let{`'`}s Work Together
+          Let{"'"}s Work Together
         </h1>
         <Link
           href={"/contactus"}
