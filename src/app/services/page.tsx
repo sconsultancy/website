@@ -51,11 +51,11 @@ function Services() {
         <h1 className=" font-medium text-6xl tracking-tight mb-8">Services</h1>
         <h2 className=" font-semibold text-xl tracking-tight leading-tight text-black text-opacity-70">
           Welcome to SCG, where we provide expert guidance and tailored
-          solutions to help you navigate the complex challenges of today's
+          solutions to help you navigate the complex challenges of today&apos;s
           business landscape. Our dedicated team of consultants brings a wealth
           of experience and a commitment to excellence to every project. Whether
-          you're a small startup or a global corporation, we're here to support
-          your success.
+          you&apos;re a small startup or a global corporation, we&apos;re here
+          to support your success.
         </h2>
         <div className=" grid grid-cols-3 gap-12 w-4/5 mt-24">
           {servicesCardList.map((e, i) => {
