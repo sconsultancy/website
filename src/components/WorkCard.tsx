@@ -6,7 +6,7 @@ function WorkCard({ imgSrc, workType, workDesc, workLink }: any) {
   return (
     <Link href={workLink}>
       <div
-        className="  relative"
+        className="  relative "
         onMouseEnter={() => {
           setHover(true);
         }}
@@ -14,7 +14,7 @@ function WorkCard({ imgSrc, workType, workDesc, workLink }: any) {
           setHover(false);
         }}
       >
-        <img src={imgSrc} className=" rounded-xl" alt="" />
+        <img src={imgSrc} className=" rounded-xl h-[400px]" alt="" />
         <div
           className={` absolute ${
             hover ? "flex" : "hidden"

@@ -13,59 +13,68 @@ export default function Home() {
       style={{ backgroundImage: "url(hero_bg.png)" }}
     >
       {/* Hero Section */}
-      <div className="flex flex-col items-center  relative top-[270px] pb-[150px] mb-[320px]">
-        <div className="light_glass h-[658px] w-[568px] p-12 pt-20 pl-20  rounded-xl relative right-10 z-30 flex flex-col  ">
-          <div className="  py-2 w-[137px] rounded-full relative left-5 bg-black bg-opacity-10 text-black text-opacity-60  text-center font-semibold ">
-            BEST CHOICE
-          </div>
-          <h1 className=" w-[400px] pt-4 font-medium text-[64px] tracking-tighter leading-[65px] ">
-            Unleash Your Potential with{" "}
-            <span className=" text-black text-opacity-70  font-semibold">
-              SCG
-            </span>
-          </h1>
-          <p className="  pt-5 text-xl tracking-tight leading-6 font-bold text-black text-opacity-40">
-            Scale with interactive websites, custom tools, and growth hacks to
-            supercharge your business
-          </p>
+      <div className="flex flex-col items-center   relative top-[270px] pb-[150px] mb-[320px] ">
+        <div className="relative">
+          <div className="light_glass h-[658px] max-w-[568px] max-sm:p-12 pt-20 pl-20  rounded-xl relative right-10 z-30 flex flex-col overflow-hidden ">
+            <div className="  py-2 max-w-[137px] rounded-full relative left-5 bg-black bg-opacity-10 text-black text-opacity-60  text-center font-semibold ">
+              BEST CHOICE
+            </div>
+            <h1 className=" max-w-[400px] pt-4 font-medium text-[64px] tracking-tighter leading-[65px] ">
+              Unleash Your Potential with{" "}
+              <span className=" text-black text-opacity-70  font-semibold">
+                SCG
+              </span>
+            </h1>
+            <p className="  pt-5 text-xl tracking-tight leading-6 font-bold text-black text-opacity-40">
+              Scale with interactive websites, custom tools, and growth hacks to
+              supercharge your business
+            </p>
 
-          <div className=" mt-8 pl-4 flex  justify-between  border border-black   rounded-full  ">
-            <input
-              type="text"
-              placeholder="Your Work Email"
-              className=" bg-black bg-opacity-0  outline-none  font-semibold text-black text-opacity-50 py-4"
-            />
-            <button className=" bg-black text-white rounded-full w-[149px] h-full text-sm font-medium">
-              Get Started
-            </button>
+            <div className=" mt-8 pl-4 flex  justify-between  border border-black   rounded-full  ">
+              <input
+                type="text"
+                placeholder="Your Work Email"
+                className=" bg-black bg-opacity-0  outline-none  font-semibold text-black text-opacity-50 py-4"
+              />
+              <button className=" bg-black text-white rounded-full max-w-[149px] h-full text-sm font-medium">
+                Get Started
+              </button>
+            </div>
           </div>
+          <img
+            src="hero/blue-ball.png"
+            className=" absolute top-2 right-[50px] z-10"
+            alt=""
+          />
+          <img
+            src="hero/half-blue-ball.png"
+            className=" absolute top-[150px] -left-[40px] z-10"
+            alt=""
+          />
+
+          <img
+            src="hero/plant.png"
+            className=" absolute top-[100px] -right-[80px] z-10 hidden"
+            alt=""
+          />
+          <img
+            src="hero/coffee.png"
+            className=" absolute -left-[200px] -top-[120px]"
+            alt=""
+          />
+          <img
+            src="hero/cred-card.png"
+            className="absolute top-[325px] -left-[190px] z-10 "
+            alt=""
+          />
         </div>
-        <img
-          src="hero/coffee.png"
-          className=" absolute left-[220px] -top-[110px]"
-          alt=""
-        />
-        <img
-          src="hero/blue-ball.png"
-          className=" absolute top-2 right-[550px] z-10"
-          alt=""
-        />
-        <img
-          src="hero/half-blue-ball.png"
-          className=" absolute top-[150px] left-[437px] z-10"
-          alt=""
-        />
-        <img
-          src="hero/plant.png"
-          className=" absolute top-[100px] right-[339px] z-10"
-          alt=""
-        />
+
         <img
           src="hero/red-ball.png"
           className=" absolute top-[60px] right-[89px]"
           alt=""
         />
-        <div className="light_glass h-[180px] w-[180px] rounded-xl absolute top-[100px] right-[139px] z-30 flex  justify-center items-center">
+        <div className="light_glass h-[180px] max-w-[180px] rounded-xl absolute top-[100px] right-[139px] z-30 flex  justify-center items-center max-[1200px]:hidden  ">
           <img src="hero/graph.png" alt="" />
         </div>
         <img
@@ -75,7 +84,7 @@ export default function Home() {
         />
         <img
           src="hero/color-ball.png"
-          className="absolute top-[140px] right-[199px] z-10"
+          className="absolute top-[140px] right-[199px] z-10  max-[1200px]:hidden"
           alt=""
         />
         <img
@@ -83,26 +92,20 @@ export default function Home() {
           className="absolute bottom-[175px] left-[35%] z-10"
           alt=""
         />
-
-        <img
-          src="hero/cred-card.png"
-          className="absolute top-[325px] left-[17.5%] z-10"
-          alt=""
-        />
       </div>
       {/* Services */}
-      <div className="w-full flex justify-center">
+      <div className="w-full flex justify-center ">
         <div className=" bg-[#353535] w-[85%] p-10 pb-20 flex flex-col items-center rounded-[60px] ">
           <h1 className=" text-6xl text-white font-medium tracking-tighter mb-20 mt-8">
             Services
           </h1>
           <div className=" w-[80%]">
-            <div className=" grid  grid-cols-3 gap-8   ">
+            <div className=" grid  grid-cols-3 gap-8 max-2xl:grid-cols-2 max-lg:grid-cols-1  ">
               <Link
                 className="dark_glass  flex flex-col  p-8 pr-12"
                 href="/services/webdevelopment"
               >
-                <div className="  w-[70px] h-[70px] mb-5 bg-[#353535] rounded-full flex justify-center items-center relative left-3 ">
+                <div className="  max-w-[70px] h-[70px] mb-5 bg-[#353535] rounded-full flex justify-center items-center relative left-3 ">
                   <img
                     className="h-12 w-12 fill-[#73C1C3]"
                     src="home/services/webdev.svg"
@@ -207,34 +210,32 @@ export default function Home() {
         </div>
       </div>
       {/* Latest Works */}
-      <div className=" mt-32  w-full flex justify-center ">
-        <div className="light_glass w-[85%] flex flex-col rounded-[50px] items-center pb-12">
+      <div className=" mt-32  w-full flex justify-center  ">
+        <div className="light_glass w-[85%] flex flex-col rounded-[50px] items-center pt-0  p-12">
           <h1 className=" text-6xl font-semibold tracking-tighter my-10">
             Our Latest Works
           </h1>
-          <div className="w-full flex flex-col items-center mt-12">
+          <div className="w-full  flex max-lg:flex-col max-lg:items-center max-lg:space-y-12 justify-evenly mt-12">
             {/* Content */}
             {/* All Templates Content */}
-            <div className="flex w-full justify-evenly">
-              <WorkCard
-                imgSrc={"home/latest/rajesh.png"}
-                workType="Actor Portfolio"
-                workDesc="Rajesh Ganesh Sharma"
-                workLink="https://www.rajeshganeshsharma.in"
-              ></WorkCard>
-              <WorkCard
-                imgSrc={"home/latest/lms.png"}
-                workType="Learning Management System"
-                workDesc="Orb Academy"
-                workLink="https://www.orbacademy.in"
-              ></WorkCard>
-            </div>
+            <WorkCard
+              imgSrc={"home/latest/rajesh.png"}
+              workType="Actor Portfolio"
+              workDesc="Rajesh Ganesh Sharma"
+              workLink="https://www.rajeshganeshsharma.in"
+            ></WorkCard>
+            <WorkCard
+              imgSrc={"home/latest/lms.png"}
+              workType="Learning Management System"
+              workDesc="Orb Academy"
+              workLink="https://www.orbacademy.in"
+            ></WorkCard>
           </div>
         </div>
       </div>
 
       {/* Contact Us */}
-      <div className=" flex  mt-32 w-full justify-center">
+      <div className=" flex  mt-32 w-full justify-center max-lg:hidden">
         <div className=" light_glass w-[85%] rounded-2xl flex flex-col items-center">
           <h1 className="text-6xl font-semibold tracking-tighter my-5 mt-12">
             Contact Us

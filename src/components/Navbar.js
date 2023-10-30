@@ -31,8 +31,8 @@ function Navbar() {
   };
   return (
     // <div className="fixed  w-full flex justify-center">
-    <div className="flex justify-center pt-3  w-full  self-center fixed z-50 ">
-      <div className="flex bg-white py-5  w-5/6   self-center justify-between px-5 rounded-full">
+    <div className="flex justify-center pt-3  w-full  self-center fixed z-50  ">
+      <div className="flex bg-white py-5  w-5/6   self-center justify-between px-5 rounded-full max-[1100px]:hidden">
         <div className="flex items-center">
           <Link href={"/"}>
             <h1 className=" font-black text-2xl">SCG</h1>

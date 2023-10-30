@@ -5,7 +5,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className=" bg-[#232526]  flex flex-col p-10 pb-5 items-center ">
+    <div className=" bg-[#232526]   flex-col p-10 pb-5 items- hidden ">
       <div className="flex justify-around items-center w-full mt-8 ">
         <div className="">
           <h1 className=" text-2xl text-white tracking-wide  mb-3">
@@ -71,7 +71,7 @@ function Footer() {
         </div>
 
         <div className="flex space-x-8 text-white">
-          <div className="flex flex-col space-y-3">
+          <div className="flex flex-col space-y-3 max-lg:hidden">
             <h1 className=" text-xl  font-normal">DESIGN</h1>
             <h3 className="pt-2 opacity-60 text-md">Digital Branding</h3>
             <h3 className="opacity-60 text-md">E-commerce Design</h3>
