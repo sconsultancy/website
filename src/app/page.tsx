@@ -5,7 +5,6 @@
 import ContactForm from "../components/ContactForm";
 import Link from "next/link";
 import WorkCard from "@/components/WorkCard";
-import { dividerClasses } from "@mui/material";
 
 export default function Home() {
   const servicesCardList = [
