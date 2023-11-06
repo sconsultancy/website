@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Modal from "./Modal";
+import NavbarDrawer from "./NavbarDrawer";
 
 function Navbar() {
   const linkList = [
@@ -12,6 +13,7 @@ function Navbar() {
     { name: "Contact Us", link: "/contactus" },
   ];
   const [isOpen, setIsOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(true);
   const [isSignup, setIsSignup] = useState(true);
   const handleLogin = async (e) => {
     setIsOpen(true);
@@ -29,9 +31,16 @@ function Navbar() {
     // setIsOpen(false);
     setIsSignup(!isSignup);
   };
+  const closeDrawer = () => {
+    // console.log("triggered CloseDrawer");
+    setNavOpen(true);
+  };
+  const handleNavBurgerClick = (e) => {
+    setNavOpen(!navOpen);
+  };
   return (
     // <div className="fixed  w-full flex justify-center">
-    <div className="flex justify-center pt-3  w-full  self-center fixed z-50  ">
+    <div className="flex justify-center pt-3  w-full  self-center fixed z-50   ">
       <div className="flex bg-white py-5  w-5/6   self-center justify-between px-5 rounded-full max-[1100px]:hidden">
         <div className="flex items-center">
           <Link href={"/"}>
@@ -73,6 +82,33 @@ function Navbar() {
             ></Modal>
           </div>
         </div>
+      </div>
+      <NavbarDrawer
+        isOpen={navOpen}
+        handleLogin={handleLogin}
+        handleSignup={handleSignup}
+        closeDrawer={closeDrawer}
+      ></NavbarDrawer>
+      <div className=" bg-white h-20 w-20 rounded-full min-[1101px]:hidden absolute right-10 flex items-center justify-center  ">
+        <button onClick={handleNavBurgerClick} className="z-50">
+          <div className=" flex flex-col ">
+            <div
+              className={`bg-black h-1 w-8 rounded-full mb-1 ${
+                navOpen ? "" : "rotate-45 relative top-1"
+              } `}
+            ></div>
+            <div
+              className={`bg-black h-1 w-8 rounded-full  mb-1 ${
+                navOpen ? "" : "hidden"
+              }`}
+            ></div>
+            <div
+              className={`bg-black h-1 w-8 rounded-full mb-1 ${
+                navOpen ? "" : "-rotate-45 relative bottom-1"
+              }`}
+            ></div>
+          </div>
+        </button>
       </div>
     </div>
     // </div>

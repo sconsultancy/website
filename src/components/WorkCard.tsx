@@ -14,7 +14,11 @@ function WorkCard({ imgSrc, workType, workDesc, workLink }: any) {
           setHover(false);
         }}
       >
-        <img src={imgSrc} className=" rounded-xl h-[400px]" alt="" />
+        <img
+          src={imgSrc}
+          className=" rounded-xl h-[400px] max-[460px]:h-[90vw] "
+          alt=""
+        />
         <div
           className={` absolute ${
             hover ? "flex" : "hidden"

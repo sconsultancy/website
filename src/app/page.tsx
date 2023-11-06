@@ -1,46 +1,92 @@
 "use client";
 
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 
 import ContactForm from "../components/ContactForm";
 import Link from "next/link";
 import WorkCard from "@/components/WorkCard";
+import { dividerClasses } from "@mui/material";
 
 export default function Home() {
+  const servicesCardList = [
+    {
+      name: "Web Development",
+      text: "Scale with interactive websites, custom tools, and access to our investor",
+      icon: "home/services/webdev.svg",
+      url: "/services/webdevelopment",
+    },
+    {
+      name: "App Development",
+      text: "Scale with interactive websites, custom tools, and access to our investor",
+      icon: "home/services/appdev.svg",
+      url: "/services/appdevelopment",
+    },
+    {
+      name: "Accounting",
+      text: "Scale with interactive websites, custom tools, and access to our investor",
+      icon: "home/services/accounting.svg",
+      url: "/services/accounting",
+    },
+    {
+      name: "Tax Consultancy",
+      text: "Scale with interactive websites, custom tools, and access to our investor",
+      icon: "home/services/tax.svg",
+      url: "/services/taxconsultancy",
+    },
+    {
+      name: "Compliance Management",
+      text: "Scale with interactive websites, custom tools, and access to our investor",
+      icon: "home/services/compliance.svg",
+      url: "/services/compliancemanagement",
+    },
+    {
+      name: "Startup Consultancy",
+      text: "Scale with interactive websites, custom tools, and access to our investor",
+      icon: "home/services/startup.svg",
+      url: "/services/startupconsultancy",
+    },
+  ];
+
   return (
-    <div
-      className="main_body pb-24"
-      style={{ backgroundImage: "url(hero_bg.png)" }}
-    >
+    <div className="pb-24 ">
+      <div></div>
+      {/* <div className=" h-32 w-32 bg-slate-900 min-[1100px]:bg-red-700"></div> */}
+
       {/* Hero Section */}
-      <div className="flex flex-col items-center   relative top-[270px] pb-[150px] mb-[320px] ">
+      <div className="flex flex-col items-center relative top-[270px] max-[1100px]:top-[170px] pb-[150px] mb-[320px] ">
         <div className="relative">
-          <div className="light_glass h-[658px] max-w-[568px] max-sm:p-12 pt-20 pl-20  rounded-xl relative right-10 z-30 flex flex-col overflow-hidden ">
-            <div className="  py-2 max-w-[137px] rounded-full relative left-5 bg-black bg-opacity-10 text-black text-opacity-60  text-center font-semibold ">
+          <div className="light_glass h-[658px] max-sm:h-auto max-w-[568px] max-md:max-w-[80vw] max-sm:p-12 pt-20 pl-20 pr-7  rounded-xl relative right-10 max-md:right-0 z-30 flex flex-col overflow-hidden ">
+            <div className="  py-2 max-w-[137px] max-[473px]:max-w-[100px] rounded-full relative left-5 bg-black bg-opacity-10 max-[473px]:text-xs text-black text-opacity-60  text-center font-semibold ">
               BEST CHOICE
             </div>
-            <h1 className=" max-w-[400px] pt-4 font-medium text-[64px] tracking-tighter leading-[65px] ">
+            <h1 className=" max-w-[400px] max-sm:max-w-[300px] pt-4 font-medium text-[64px] max-sm:text-[50px] max-[473px]:text-[40px] max-[400px]:text-4xl tracking-tighter leading-[65px] max-[473px]:leading-[43px] ">
               Unleash Your Potential with{" "}
               <span className=" text-black text-opacity-70  font-semibold">
                 SCG
               </span>
             </h1>
-            <p className="  pt-5 text-xl tracking-tight leading-6 font-bold text-black text-opacity-40">
+            <p className="  pt-5 text-xl max-sm:text-base max-[473px]:text-sm max-[400px]:text-xs tracking-tight leading-6 font-bold text-black text-opacity-40">
               Scale with interactive websites, custom tools, and growth hacks to
               supercharge your business
             </p>
-
-            <div className=" mt-8 pl-4 flex  justify-between  border border-black   rounded-full  ">
-              <input
-                type="text"
-                placeholder="Your Work Email"
-                className=" bg-black bg-opacity-0  outline-none  font-semibold text-black text-opacity-50 py-4"
-              />
-              <button className=" bg-black text-white rounded-full max-w-[149px] h-full text-sm font-medium">
+            <div className="relative flex mb-10 w-full max-[550px]:flex-col items-center">
+              <div className=" mt-8 pl-4  pr-3 flex w-full  justify-between  border border-black   rounded-full  ">
+                <input
+                  type="text"
+                  placeholder="Your Work Email"
+                  className=" bg-black bg-opacity-0  outline-none  font-semibold text-black text-opacity-50 max-[472px]:text-sm py-4 max-[472px]:py-3 w-[70%] max-[550px]:w-[100%]"
+                />
+              </div>
+              <button className=" absolute max-[550px]:static max-[550px]:mt-3 h-[57px] top-8 -right-4  bg-black text-white rounded-full px-6  py-4 text-sm max-[472px]:text-xs font-medium">
                 Get Started
               </button>
             </div>
           </div>
+          <img
+            src="hero/coffee.png"
+            className=" absolute -left-[200px] max-md:-left-28 max-[473px]:w-48 max-[473px]:-top-24  -top-[120px]"
+            alt=""
+          />
           <img
             src="hero/blue-ball.png"
             className=" absolute top-2 right-[50px] z-10"
@@ -48,7 +94,7 @@ export default function Home() {
           />
           <img
             src="hero/half-blue-ball.png"
-            className=" absolute top-[150px] -left-[40px] z-10"
+            className=" absolute top-[150px] -left-[40px] max-md:left-0 z-10"
             alt=""
           />
 
@@ -57,14 +103,10 @@ export default function Home() {
             className=" absolute top-[100px] -right-[80px] z-10 hidden"
             alt=""
           />
-          <img
-            src="hero/coffee.png"
-            className=" absolute -left-[200px] -top-[120px]"
-            alt=""
-          />
+
           <img
             src="hero/cred-card.png"
-            className="absolute top-[325px] -left-[190px] z-10 "
+            className="absolute top-[325px] -left-[190px] max-md:-left-28 z-10 "
             alt=""
           />
         </div>
@@ -74,7 +116,7 @@ export default function Home() {
           className=" absolute top-[60px] right-[89px]"
           alt=""
         />
-        <div className="light_glass h-[180px] max-w-[180px] rounded-xl absolute top-[100px] right-[139px] z-30 flex  justify-center items-center max-[1200px]:hidden  ">
+        <div className="light_glass h-[180px] w-[180px] rounded-xl absolute top-[100px] right-[139px] z-30 flex  justify-center items-center max-[1200px]:hidden  ">
           <img src="hero/graph.png" alt="" />
         </div>
         <img
@@ -96,115 +138,34 @@ export default function Home() {
       {/* Services */}
       <div className="w-full flex justify-center ">
         <div className=" bg-[#353535] w-[85%] p-10 pb-20 flex flex-col items-center rounded-[60px] ">
-          <h1 className=" text-6xl text-white font-medium tracking-tighter mb-20 mt-8">
+          <h1 className=" text-6xl max-sm:text-5xl text-white font-medium tracking-tighter mb-20 mt-8">
             Services
           </h1>
-          <div className=" w-[80%]">
-            <div className=" grid  grid-cols-3 gap-8 max-2xl:grid-cols-2 max-lg:grid-cols-1  ">
-              <Link
-                className="dark_glass  flex flex-col  p-8 pr-12"
-                href="/services/webdevelopment"
-              >
-                <div className="  max-w-[70px] h-[70px] mb-5 bg-[#353535] rounded-full flex justify-center items-center relative left-3 ">
-                  <img
-                    className="h-12 w-12 fill-[#73C1C3]"
-                    src="home/services/webdev.svg"
-                    alt=""
-                  />
-                </div>
-                <h1 className=" text-2xl text-white font-medium tracking-tighter  mb-3">
-                  Web Development
-                </h1>
-                <p className=" text-xl text-white text-opacity-70">
-                  Scale with interactive websites, custom tools, and access to
-                  our investor
-                </p>
-              </Link>
-
-              <Link
-                className="dark_glass  flex flex-col  p-8 pr-12"
-                href="/services/appdevelopment"
-              >
-                <div className="  w-[70px] h-[70px] mb-5 bg-[#353535] rounded-full flex justify-center items-center relative left-3 ">
-                  <img
-                    src="home/services/appdev.svg"
-                    className=" h-10"
-                    alt=""
-                  />
-                </div>
-                <h1 className=" text-2xl text-white font-medium tracking-tighter  mb-3">
-                  App Development
-                </h1>
-                <p className=" text-xl text-white text-opacity-70">
-                  Scale with interactive websites, custom tools, and access to
-                  our investor
-                </p>
-              </Link>
-
-              <Link
-                className="dark_glass  flex flex-col  p-8 pr-12"
-                href="/services/accounting"
-              >
-                <div className="  w-[70px] h-[70px] mb-5 bg-[#353535] rounded-full flex justify-center items-center relative left-3 ">
-                  <img
-                    src="home/services/accounting.svg"
-                    className=" h-12 relative bottom-1"
-                    alt=""
-                  />
-                </div>
-                <h1 className=" text-2xl text-white font-medium tracking-tighter  mb-3">
-                  Accounting
-                </h1>
-                <p className=" text-xl text-white text-opacity-70">
-                  Scale with interactive websites, custom tools, and access to
-                  our investor
-                </p>
-              </Link>
-              <Link
-                className="dark_glass  flex flex-col  p-8 pr-12"
-                href={"/services/taxconsultancy"}
-              >
-                <div className="  w-[70px] h-[70px] mb-5 bg-[#353535] rounded-full flex justify-center items-center relative left-3 ">
-                  <img src="home/services/tax.svg" alt="" />
-                </div>
-                <h1 className=" text-2xl text-white font-medium tracking-tighter  mb-3">
-                  Tax Consultancy
-                </h1>
-                <p className=" text-xl text-white text-opacity-70">
-                  Scale with interactive websites, custom tools, and access to
-                  our investor
-                </p>
-              </Link>
-              <Link
-                className="dark_glass  flex flex-col  p-8 pr-12"
-                href={"/services/compliancemanagement"}
-              >
-                <div className="  w-[70px] h-[70px] mb-5 bg-[#353535] rounded-full flex justify-center items-center relative left-3 ">
-                  <img src="home/services/compliance.svg" alt="" />
-                </div>
-                <h1 className=" text-2xl text-white font-medium tracking-tighter  mb-3">
-                  Compliance Management
-                </h1>
-                <p className=" text-xl text-white text-opacity-70">
-                  Scale with interactive websites, custom tools, and access to
-                  our investor
-                </p>
-              </Link>
-              <Link
-                className="dark_glass  flex flex-col  p-8 pr-12"
-                href={"/services/startupconsultancy"}
-              >
-                <div className="  w-[70px] h-[70px] mb-5 bg-[#353535] rounded-full flex justify-center items-center relative left-3 ">
-                  <img src="home/services/startup.svg" alt="" />
-                </div>
-                <h1 className=" text-2xl text-white font-medium tracking-tighter  mb-3">
-                  Startup Consultancy
-                </h1>
-                <p className=" text-xl text-white text-opacity-70">
-                  Scale with interactive websites, custom tools, and access to
-                  our investor
-                </p>
-              </Link>
+          <div className=" w-[80%] max-[473px]:w-[85%] max-[400px]:w-[90%]">
+            <div className=" grid  grid-cols-3 gap-8  max-2xl:grid-cols-2 max-lg:grid-cols-1  ">
+              {servicesCardList.map((e, i) => {
+                return (
+                  <Link
+                    className="dark_glass  flex flex-col  p-8 max-[473px]:p-6 max-[400px]:p-4 pr-12"
+                    href={e.url}
+                    key={i}
+                  >
+                    <div className="  w-[70px] h-[70px] p-3 max-sm:w-14 max-[473px]:w-12 max-sm:h-14 max-[473px]:h-12 mb-5 bg-[#353535] rounded-full flex justify-center items-center relative left-3 ">
+                      <img
+                        className="w-12 max-sm:w-10  fill-[#73C1C3]"
+                        src={e.icon}
+                        alt=""
+                      />
+                    </div>
+                    <h1 className=" text-2xl max-sm:text-xl max-[473px]:text-lg max-[400px]:text-base text-white font-medium tracking-tighter  mb-3">
+                      {e.name}
+                    </h1>
+                    <p className=" text-xl max-sm:text-lg max-[473px]:text-base max-[400px]:text-sm text-white text-opacity-70">
+                      {e.text}
+                    </p>
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -212,7 +173,7 @@ export default function Home() {
       {/* Latest Works */}
       <div className=" mt-32  w-full flex justify-center  ">
         <div className="light_glass w-[85%] flex flex-col rounded-[50px] items-center pt-0  p-12">
-          <h1 className=" text-6xl font-semibold tracking-tighter my-10">
+          <h1 className=" text-6xl max-sm:text-[50px] max-[473px]:text-[40px] max-[400px]:text-4xl font-semibold tracking-tighter my-10">
             Our Latest Works
           </h1>
           <div className="w-full  flex max-lg:flex-col max-lg:items-center max-lg:space-y-12 justify-evenly mt-12">
