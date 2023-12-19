@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={" main_body "}
-        style={{ backgroundImage: "url(hero_bg.png)" }}
+        style={{ backgroundImage: "url(/hero_bg.png)" }}
       >
         <Navbar></Navbar>
         {children}

@@ -48,9 +48,6 @@ export default function Home() {
 
   return (
     <div className="pb-24 ">
-      <div></div>
-      {/* <div className=" h-32 w-32 bg-slate-900 min-[1100px]:bg-red-700"></div> */}
-
       {/* Hero Section */}
       <div className="flex flex-col items-center relative top-[270px] max-[1100px]:top-[170px] pb-[150px] mb-[320px] ">
         <div className="relative">
@@ -318,6 +315,11 @@ export default function Home() {
   );
 }
 /*
+-> Write text in Progress Section
+
+After 1st launch
+->Some Apps to show in App Development's Latest Work Section
+-> the progress line should move with screen scroll in Progress Section
 
 
  */

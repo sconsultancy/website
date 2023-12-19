@@ -66,7 +66,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex max-sm:flex-col space-y-8 text-center text-white ">
+        <div className="flex max-sm:flex-col space-x-8 max-sm:space-y-8 text-center text-white ">
           <div className="flex flex-col space-y-3 ">
             <h1 className=" text-xl  font-normal">DESIGN</h1>
             <h3 className="pt-2 opacity-60 text-md">Digital Branding</h3>
