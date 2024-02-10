@@ -10,37 +10,43 @@ export default function Home() {
   const servicesCardList = [
     {
       name: "Web Development",
-      text: "Scale with interactive websites, custom tools, and access to our investor",
+      text: "Transform your online presence with our cutting-edge web design and development services.",
       icon: "home/services/webdev.svg",
       url: "/services/webdevelopment",
     },
     {
       name: "App Development",
-      text: "Scale with interactive websites, custom tools, and access to our investor",
+      text: "Elevate your brand with our custom mobile app development services.",
       icon: "home/services/appdev.svg",
       url: "/services/appdevelopment",
     },
+    // {
+    //   name: "Accounting",
+    //   text: "Scale with interactive websites, custom tools, and access to our investor",
+    //   icon: "home/services/accounting.svg",
+    //   url: "/services/accounting",
+    // },
+    // {
+    //   name: "Tax Consultancy",
+    //   text: "Scale with interactive websites, custom tools, and access to our investor",
+    //   icon: "home/services/tax.svg",
+    //   url: "/services/taxconsultancy",
+    // },
+    // {
+    //   name: "Compliance Management",
+    //   text: "Scale with interactive websites, custom tools, and access to our investor",
+    //   icon: "home/services/compliance.svg",
+    //   url: "/services/compliancemanagement",
+    // },
     {
-      name: "Accounting",
-      text: "Scale with interactive websites, custom tools, and access to our investor",
-      icon: "home/services/accounting.svg",
-      url: "/services/accounting",
-    },
-    {
-      name: "Tax Consultancy",
-      text: "Scale with interactive websites, custom tools, and access to our investor",
-      icon: "home/services/tax.svg",
-      url: "/services/taxconsultancy",
-    },
-    {
-      name: "Compliance Management",
-      text: "Scale with interactive websites, custom tools, and access to our investor",
-      icon: "home/services/compliance.svg",
-      url: "/services/compliancemanagement",
+      name: "Software Development",
+      text: "Empower your business with tailor-made software solutions for your organizational goals.",
+      icon: "home/services/software.svg",
+      url: "/services/software-development",
     },
     {
       name: "Startup Consultancy",
-      text: "Scale with interactive websites, custom tools, and access to our investor",
+      text: "Our startup consultancy services are designed to guide you through every stage of your startup journey.",
       icon: "home/services/startup.svg",
       url: "/services/startupconsultancy",
     },
@@ -316,8 +322,10 @@ export default function Home() {
 }
 /*
 -> Write text in Progress Section
-
+-> Text in Service in Home 
+->Create BackEnd with Expressjs
 After 1st launch
+->(Tax Consultancy,Compliance Management, Accounting) => should be added after CA added to firm
 ->Some Apps to show in App Development's Latest Work Section
 -> the progress line should move with screen scroll in Progress Section
 

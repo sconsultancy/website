@@ -7,37 +7,41 @@ function Services() {
   const servicesCardList = [
     {
       name: "Web Development",
-      text: "Scale with interactive websites, custom tools, and access to our investor",
+      text: "Transform your online presence with our cutting-edge web design and development services.",
+
       icon: "services/webdev.svg",
       url: "/services/webdevelopment",
     },
     {
       name: "App Development",
-      text: "Scale with interactive websites, custom tools, and access to our investor",
+      text: "Elevate your brand with our custom mobile app development services.",
+
       icon: "services/appdev.svg",
       url: "/services/appdevelopment",
     },
+    // {
+    //   name: "Accounting",
+    //   text: "Scale with interactive websites, custom tools, and access to our investor",
+    //   icon: "services/account.svg",
+    //   url: "/services/accounting",
+    // },
+    // {
+    //   name: "Tax Consultancy",
+    //   text: "Scale with interactive websites, custom tools, and access to our investor",
+    //   icon: "services/money.svg",
+    //   url: "/services/taxconsultancy",
+    // },
     {
-      name: "Accounting",
-      text: "Scale with interactive websites, custom tools, and access to our investor",
-      icon: "services/account.svg",
-      url: "/services/accounting",
-    },
-    {
-      name: "Tax Consultancy",
-      text: "Scale with interactive websites, custom tools, and access to our investor",
-      icon: "services/money.svg",
-      url: "/services/taxconsultancy",
-    },
-    {
-      name: "Compliance Management",
-      text: "Scale with interactive websites, custom tools, and access to our investor",
-      icon: "services/law.svg",
-      url: "/services/compliancemanagement",
+      name: "Software Development",
+      text: "Empower your business with tailor-made software solutions for your organizational goals.",
+
+      icon: "services/software.svg",
+      url: "/services/software-development",
     },
     {
       name: "Startup Consultancy",
-      text: "Scale with interactive websites, custom tools, and access to our investor",
+      text: "Our startup consultancy services are designed to guide you through every stage of your startup journey.",
+
       icon: "services/startup.svg",
       url: "/services/startupconsultancy",
     },
@@ -63,7 +67,7 @@ function Services() {
         </div>
 
         <div className=" bg-white  mt-24 w-[100vw] flex justify-center py-12">
-          <div className="  grid grid-cols-3 max-md:grid-cols-2  max-sm:grid-cols-1  gap-12 w-4/5 ">
+          <div className="  grid grid-cols-2 max-md:grid-cols-2  max-sm:grid-cols-1  gap-12 w-4/5 ">
             {servicesCardList.map((e, i) => {
               return (
                 <ServiceCard

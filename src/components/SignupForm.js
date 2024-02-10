@@ -61,7 +61,6 @@ function SignupForm(props) {
               onFocus={handleFocusInput}
               onBlur={handleBlurInput}
             />
-            {/* <label className="inputLabel"></label> */}
             <button className=" bg-black bg-opacity-70 rounded-md text-white font-semibold text-[13px] w-24">
               Send OTP
             </button>

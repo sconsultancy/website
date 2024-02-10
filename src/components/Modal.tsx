@@ -21,7 +21,7 @@ function Modal(props: any) {
         props.isOpen ? "flex" : "hidden"
       } justify-center items-center h-screen w-screen left-0 top-0 light_glass  z-50 `}
     >
-      <div className=" bg-white w-3/12 p-10 rounded-xl relative">
+      <div className=" bg-white min-w-3/12 p-10 rounded-xl relative">
         {/* Close Button */}
         <button
           onClick={() => {

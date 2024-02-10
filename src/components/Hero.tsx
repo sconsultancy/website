@@ -20,7 +20,12 @@ function Hero({ type }: any) {
             <h1 className=" max-w-[400px] max-sm:max-w-[300px] pt-4 font-medium text-[64px] max-sm:text-[50px] max-[473px]:text-[40px] max-[400px]:text-4xl tracking-tighter leading-[65px] max-[473px]:leading-[43px] ">
               Unleash Your Potential with{" "}
               <span className=" text-black text-opacity-70  font-semibold">
-                SCG {type == "website" ? "Websites" : "Apps"}
+                SCG{" "}
+                {type == "website"
+                  ? "Websites"
+                  : type == "app"
+                  ? "Apps"
+                  : "Softwares"}
               </span>
             </h1>
             <p className="  pt-5 text-xl max-sm:text-base max-[473px]:text-sm max-[400px]:text-xs tracking-tight leading-6 font-bold text-black text-opacity-40">
@@ -55,17 +60,21 @@ function Hero({ type }: any) {
             className=" absolute top-[150px] -left-[40px] max-md:left-0 z-10"
             alt=""
           />
-
           <img
             src="/hero/plant.png"
             className=" absolute top-[100px] -right-[80px] z-10 hidden"
             alt=""
           />
-
           {type == "website" ? (
             <img
               src="/hero/website_hero.png"
               className="absolute top-[325px] -left-[320px] max-md:-left-28 z-10 "
+              alt=""
+            />
+          ) : type == "software" ? (
+            <img
+              src="/services/software/software-hero.png"
+              className="absolute top-[325px] -left-[275px] max-md:-left-28 z-10 "
               alt=""
             />
           ) : (
@@ -74,7 +83,7 @@ function Hero({ type }: any) {
               className="absolute top-[325px] -left-[300px] max-md:-left-28 z-10 "
               alt=""
             />
-          )}
+          )}{" "}
         </div>
 
         <img

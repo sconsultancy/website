@@ -42,20 +42,30 @@ function Process({ type }: any) {
           {processUnit(
             "1",
             "Design",
-            " Lorem ipsum dolor sit amet consectetur adipisicing elit Quibusdam, veniam."
+            `  ${
+              type == "website"
+                ? " We design visually stunning, user-friendly websites"
+                : type == "app"
+                ? " We design visually stunning, user-friendly apps"
+                : type == "software"
+                ? "We design visually stunning, user-friendly softwares"
+                : "We design the best possible systems"
+            }.`
           )}
           {dottedLine()}
           {processUnit(
             "2",
             "Develop",
-            " Lorem ipsum dolor sit amet consectetur adipisicing elit Quibusdam, veniam."
+            `We ${
+              type == "startup" ? "Achieve" : "Develop"
+            } it fast and effective.`
           )}
 
           {dottedLine()}
           {processUnit(
             "3",
             "Enjoy",
-            " Lorem ipsum dolor sit amet consectetur adipisicing elit Quibusdam, veniam."
+            "Enjoy the result and maximise your potential."
           )}
         </div>
       </div>
