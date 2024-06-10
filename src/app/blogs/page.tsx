@@ -1,8 +1,11 @@
 import ComingSoon from "@/components/ComingSoon";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 
 function Blogs() {
+  // useEffect(()=>)
+  // useEffect
+
   return (
     <div>
       <div className=" h-screen w-screen bg-slate-100 flex flex-col items-center justify-center">

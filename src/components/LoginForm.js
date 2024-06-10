@@ -1,5 +1,6 @@
 "use client";
 
+import axios from "axios";
 import React from "react";
 
 function LoginForm(props) {
@@ -26,6 +27,12 @@ function LoginForm(props) {
         e.target.style.borderColor = "rgb(209 213 219)";
       }
     }
+  };
+
+  const handleGoogleSignIn = async (e) => {
+    e.preventDefault();
+
+    const response = await axios.get("/api/login", { withCredentials: true });
   };
   return (
     <div className="">
@@ -81,7 +88,10 @@ function LoginForm(props) {
         {/* <span className=" mt-5 h-9 w-[99px] bg-black"></span> */}
       </div>
       <div className=" mt-6">
-        <button className=" p-2 flex w-full items-center justify-center border">
+        <button
+          className=" p-2 flex w-full items-center justify-center border"
+          onClick={handleGoogleSignIn}
+        >
           <span>
             <img className=" w-8" src="icon/google.svg" alt="" />
           </span>

@@ -1,5 +1,6 @@
 "use client";
 
+import axios from "axios";
 import React from "react";
 
 function SignupForm(props) {
@@ -27,6 +28,11 @@ function SignupForm(props) {
       }
     }
   };
+
+  const handleGoogleSignUp = async (e) => {
+    axios.get("http://localhost:8000/auth/google");
+  };
+
   return (
     <div className="">
       <h1 className=" mb-3 text-center text-2xl font-bold text-blue-900">
@@ -122,7 +128,10 @@ function SignupForm(props) {
         {/* <span className=" mt-5 h-9 w-[99px] bg-black"></span> */}
       </div>
       <div className=" mt-6">
-        <button className=" p-2 flex w-full items-center justify-center border">
+        <button
+          className=" p-2 flex w-full items-center justify-center border"
+          onClick={handleGoogleSignUp}
+        >
           <span>
             <img className=" w-8" src="icon/google.svg" alt="" />
           </span>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Modal from "./Modal";
 import NavbarDrawer from "./NavbarDrawer";
-
+import axios from "axios";
 function Navbar() {
   const linkList = [
     { name: "Home", link: "/" },
@@ -15,6 +15,27 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [navOpen, setNavOpen] = useState(true);
   const [isSignup, setIsSignup] = useState(true);
+
+  // <-- Auth Setup -->
+  const [userData, setUserData] = useState({});
+
+  const getUser = async () => {
+    try {
+      const res = await axios.get("http://localhost:5000/login/success", {
+        withCredentials: true,
+      });
+      console.log("res", res);
+    } catch (error) {
+      console.log("errrrr", error);
+    }
+  };
+
+  useEffect(() => {
+    getUser();
+  }, []);
+
+  // <-- Auth Setup -->
+
   const handleLogin = async (e) => {
     setIsOpen(true);
     setIsSignup(false);
