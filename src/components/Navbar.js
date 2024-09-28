@@ -82,7 +82,7 @@ function Navbar() {
               );
             })}
           </div>
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <button
               className=" mx-3 h-[51px] w-[143px] rounded-full  border-[1px] border-black font-semibold text-lg"
               onClick={handleLogin}
@@ -101,7 +101,7 @@ function Navbar() {
               isSignup={isSignup}
               switchType={switchType}
             ></Modal>
-          </div>
+          </div> */}
         </div>
       </div>
       <NavbarDrawer

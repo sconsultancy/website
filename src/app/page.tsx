@@ -5,8 +5,12 @@
 import ContactForm from "../components/ContactForm";
 import Link from "next/link";
 import WorkCard from "@/components/WorkCard";
+import { useState } from "react";
+import axios from "axios";
 
 export default function Home() {
+  const [input, setinput] = useState("");
+
   const servicesCardList = [
     {
       name: "Web Development",
@@ -20,24 +24,7 @@ export default function Home() {
       icon: "home/services/appdev.svg",
       url: "/services/appdevelopment",
     },
-    // {
-    //   name: "Accounting",
-    //   text: "Scale with interactive websites, custom tools, and access to our investor",
-    //   icon: "home/services/accounting.svg",
-    //   url: "/services/accounting",
-    // },
-    // {
-    //   name: "Tax Consultancy",
-    //   text: "Scale with interactive websites, custom tools, and access to our investor",
-    //   icon: "home/services/tax.svg",
-    //   url: "/services/taxconsultancy",
-    // },
-    // {
-    //   name: "Compliance Management",
-    //   text: "Scale with interactive websites, custom tools, and access to our investor",
-    //   icon: "home/services/compliance.svg",
-    //   url: "/services/compliancemanagement",
-    // },
+
     {
       name: "Software Development",
       text: "Empower your business with tailor-made software solutions for your organizational goals.",
@@ -51,7 +38,15 @@ export default function Home() {
       url: "/services/startupconsultancy",
     },
   ];
-
+  const handleButtonClick = async () => {
+    const res = await axios.post(
+      "https://render-test-p5hr.onrender.com/api/email",
+      {
+        email: input,
+      }
+    );
+    console.log(res);
+  };
   return (
     <div className="pb-24 ">
       {/* Hero Section */}
@@ -76,10 +71,16 @@ export default function Home() {
                 <input
                   type="text"
                   placeholder="Your Work Email"
+                  onChange={(e) => {
+                    setinput(e.target.value);
+                  }}
                   className=" bg-black bg-opacity-0  outline-none  font-semibold text-black text-opacity-50 max-[472px]:text-sm py-4 max-[472px]:py-3 w-[70%] max-[550px]:w-[100%]"
                 />
               </div>
-              <button className=" absolute max-[550px]:static max-[550px]:mt-3 h-[57px] top-8 -right-4  bg-black text-white rounded-full px-6  py-4 text-sm max-[472px]:text-xs font-medium">
+              <button
+                onClick={handleButtonClick}
+                className=" absolute max-[550px]:static max-[550px]:mt-3 h-[57px] top-8 -right-4  bg-black text-white rounded-full px-6  py-4 text-sm max-[472px]:text-xs font-medium"
+              >
                 Get Started
               </button>
             </div>

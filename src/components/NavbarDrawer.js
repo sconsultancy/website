@@ -44,7 +44,7 @@ function NavbarDrawer({ isOpen, handleLogin, handleSignup, closeDrawer }) {
           })}
         </div>
 
-        <div className=" flex flex-col space-y-4 mt-8">
+        {/* <div className=" flex flex-col space-y-4 mt-8">
           <button
             className="  h-[51px] w-[143px] rounded-full  border-[1px] border-black font-semibold text-lg"
             onClick={handleLogin}
@@ -57,7 +57,7 @@ function NavbarDrawer({ isOpen, handleLogin, handleSignup, closeDrawer }) {
           >
             Signup
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
