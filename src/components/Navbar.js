@@ -82,7 +82,13 @@ function Navbar() {
               );
             })}
           </div>
+<<<<<<< HEAD
           {/* <div className="flex items-center">
+=======
+        { /*
+        
+        <div className="flex items-center">
+>>>>>>> 7ba55f5a9fe9d56232b7091f823b70030b6a15bc
             <button
               className=" mx-3 h-[51px] w-[143px] rounded-full  border-[1px] border-black font-semibold text-lg"
               onClick={handleLogin}
@@ -101,7 +107,16 @@ function Navbar() {
               isSignup={isSignup}
               switchType={switchType}
             ></Modal>
+<<<<<<< HEAD
           </div> */}
+=======
+          </div>
+        
+        */
+
+          
+        }  
+>>>>>>> 7ba55f5a9fe9d56232b7091f823b70030b6a15bc
         </div>
       </div>
       <NavbarDrawer
