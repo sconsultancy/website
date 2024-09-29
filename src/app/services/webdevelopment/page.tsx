@@ -22,13 +22,17 @@ function WebDevelopment() {
             {/* Content */}
             {/* All Templates Content */}
             <WorkCard
-              imgSrc={"/home/latest/rajesh.png"}
+              imgSrc={
+                "https://sconsultancy.github.io/website/home/latest/rajesh.png"
+              }
               workType="Actor Portfolio"
               workDesc="Rajesh Ganesh Sharma"
               workLink="https://www.rajeshganeshsharma.in"
             ></WorkCard>
             <WorkCard
-              imgSrc={"/home/latest/lms.png"}
+              imgSrc={
+                "https://sconsultancy.github.io/website/home/latest/lms.png"
+              }
               workType="Learning Management System"
               workDesc="Orb Academy"
               workLink="https://www.orbacademy.in"
