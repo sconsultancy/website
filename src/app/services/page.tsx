@@ -19,18 +19,7 @@ function Services() {
       icon: "services/appdev.svg",
       url: "/services/appdevelopment",
     },
-    // {
-    //   name: "Accounting",
-    //   text: "Scale with interactive websites, custom tools, and access to our investor",
-    //   icon: "services/account.svg",
-    //   url: "/services/accounting",
-    // },
-    // {
-    //   name: "Tax Consultancy",
-    //   text: "Scale with interactive websites, custom tools, and access to our investor",
-    //   icon: "services/money.svg",
-    //   url: "/services/taxconsultancy",
-    // },
+
     {
       name: "Software Development",
       text: "Empower your business with tailor-made software solutions for your organizational goals.",

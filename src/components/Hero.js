@@ -6,7 +6,6 @@ import Image from "next/image";
 
 function Hero(type) {
   console.log(type);
-
   return (
     <div className="w-full">
       {/* Hero Section */}
@@ -45,7 +44,7 @@ function Hero(type) {
             </div>
           </div>
           <img
-            src="/hero/coffee.png"
+            src="https://sconsultancy.github.io/website/hero/coffee.png"
             className=" absolute -left-[200px] max-md:-left-28 max-[473px]:w-48 max-[473px]:-top-24  -top-[120px]"
             alt=""
           />
