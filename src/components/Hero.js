@@ -49,35 +49,35 @@ function Hero(type) {
             alt=""
           />
           <img
-            src="hero/blue-ball.png"
+            src="https://sconsultancy.github.io/website/hero/blue-ball.png"
             className=" absolute top-2 right-[50px] z-10"
             alt=""
           />
           <img
-            src="hero/half-blue-ball.png"
+            src="https://sconsultancy.github.io/website/hero/half-blue-ball.png"
             className=" absolute top-[150px] -left-[40px] max-md:left-0 z-10"
             alt=""
           />
           <img
-            src="hero/plant.png"
+            src="https://sconsultancy.github.io/website/hero/plant.png"
             className=" absolute top-[100px] -right-[80px] z-10 hidden"
             alt=""
           />
           {type == "website" ? (
             <img
-              src="hero/website_hero.png"
+              src="https://sconsultancy.github.io/website/hero/website_hero.png"
               className="absolute top-[325px] -left-[320px] max-md:-left-28 z-10 "
               alt=""
             />
           ) : type == "software" ? (
             <img
-              src="services/software/software-hero.png"
+              src="https://sconsultancy.github.io/website/services/software/software-hero.png"
               className="absolute top-[325px] -left-[275px] max-md:-left-28 z-10 "
               alt=""
             />
           ) : (
             <img
-              src="services/app/app-hero.png"
+              src="https://sconsultancy.github.io/website/services/app/app-hero.png"
               className="absolute top-[325px] -left-[300px] max-md:-left-28 z-10 "
               alt=""
             />
@@ -85,29 +85,35 @@ function Hero(type) {
         </div>
 
         <img
-          src="hero/red-ball.png"
+          src="https://sconsultancy.github.io/website/hero/red-ball.png"
           className=" absolute top-[60px] right-[89px]"
           alt=""
         />
         <div className="light_glass h-[180px] w-[180px] rounded-xl absolute top-[100px] right-[139px] z-30 flex  justify-center items-center max-[1200px]:hidden  ">
           {type == "website" ? (
-            <img src="services/website/html-dev.png" alt="" />
+            <img
+              src="https://sconsultancy.github.io/website/services/website/html-dev.png"
+              alt=""
+            />
           ) : (
-            <img src="hero/graph.png" alt="" />
+            <img
+              src="https://sconsultancy.github.io/website/hero/graph.png"
+              alt=""
+            />
           )}
         </div>
         <img
-          src="hero/black-ball.png"
+          src="https://sconsultancy.github.io/website/hero/black-ball.png"
           className="absolute bottom-[115px] right-[31.75%]"
           alt=""
         />
         <img
-          src="hero/color-ball.png"
+          src="https://sconsultancy.github.io/website/hero/color-ball.png"
           className="absolute top-[140px] right-[199px] z-10  max-[1200px]:hidden"
           alt=""
         />
         <img
-          src="hero/color-ball.png"
+          src="https://sconsultancy.github.io/website/  hero/color-ball.png"
           className="absolute bottom-[175px] left-[35%] z-10"
           alt=""
         />
