@@ -8,6 +8,9 @@ function WebDevelopment() {
   return (
     <div className="  w-[100vw]">
       <Hero type="website"></Hero>
+
+      {/* Hero Ends */}
+
       <Process type="website"></Process>
       {/* Latest Works */}
       <div className=" mt-32  w-full flex justify-center  ">

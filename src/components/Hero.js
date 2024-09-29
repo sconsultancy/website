@@ -2,19 +2,14 @@
 import Link from "next/link";
 
 import React from "react";
+import Image from "next/image";
 
-function Hero({ type }: any) {
+function Hero(type) {
   console.log(type);
 
   return (
     <div className="w-full">
-      <img
-        src="hero/coffee.png"
-        className="  max-md:-left-28 max-[473px]:w-48 max-[473px]:-top-24  -top-[120px]"
-        alt=""
-      />
-
-      {/* Hero Section
+      {/* Hero Section */}
       <div className="flex flex-col items-center relative top-[270px] max-[1100px]:top-[170px] pb-[150px] mb-[320px] ">
         <div className="relative">
           <div className="light_glass h-[658px] max-sm:h-auto max-w-[568px] max-md:max-w-[80vw] max-sm:p-12 pt-20 pl-20 pr-7  rounded-xl relative right-10 max-md:right-0 z-30 flex flex-col overflow-hidden ">
@@ -50,7 +45,7 @@ function Hero({ type }: any) {
             </div>
           </div>
           <img
-            src="hero/coffee.png"
+            src="/hero/coffee.png"
             className=" absolute -left-[200px] max-md:-left-28 max-[473px]:w-48 max-[473px]:-top-24  -top-[120px]"
             alt=""
           />
@@ -117,7 +112,7 @@ function Hero({ type }: any) {
           className="absolute bottom-[175px] left-[35%] z-10"
           alt=""
         />
-      </div> */}
+      </div>
     </div>
   );
 }
