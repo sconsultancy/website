@@ -1,8 +1,14 @@
 "use client";
 
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
 
 function ContactForm(props) {
+  const [fname, setFname] = useState("");
+  const [lName, setLName] = useState("");
+  const [mobNum, setMobNum] = useState("");
+  const [mail, setMail] = useState("");
+
   const handleFocusInput = (e) => {
     const labels = document.getElementsByTagName("label");
     e.target.style.borderColor = "rgb(30 64 175)";
@@ -27,6 +33,20 @@ function ContactForm(props) {
       }
     }
   };
+
+  const handleContactFormClick = async (e) => {
+    e.preventDefault();
+    const res = await axios.post("http://localhost:5000/api/contact", {
+      fname,
+      lName,
+      mobNum,
+      mail,
+    });
+    console.log(res);
+
+    // console.log(fname, lName, mobNum, mail);
+  };
+
   return (
     <div className="">
       <form action="#" className="flex flex-col space-y-4 pt-3">
@@ -39,6 +59,9 @@ function ContactForm(props) {
             name="fname"
             onFocus={handleFocusInput}
             onBlur={handleBlurInput}
+            onChange={(e) => {
+              setFname(e.target.value);
+            }}
           />
           <label
             htmlFor="hero_form_fname"
@@ -56,6 +79,9 @@ function ContactForm(props) {
             name="lname"
             onFocus={handleFocusInput}
             onBlur={handleBlurInput}
+            onChange={(e) => {
+              setLName(e.target.value);
+            }}
           />
           <label
             htmlFor="hero_form_lname"
@@ -73,11 +99,14 @@ function ContactForm(props) {
               className="border-b-2 outline-none text-[17px] border-b-gray-300 transition-colors  duration-300     h-9  w-full bg-white bg-opacity-5"
               onFocus={handleFocusInput}
               onBlur={handleBlurInput}
+              onChange={(e) => {
+                setMobNum(e.target.value);
+              }}
             />
             {/* <label className="inputLabel"></label> */}
-            <button className=" bg-black bg-opacity-70 rounded-md text-white font-semibold text-[13px] w-24">
+            {/* <button className=" bg-black bg-opacity-70 rounded-md text-white font-semibold text-[13px] w-24">
               Send OTP
-            </button>
+            </button> */}
           </span>
           <label
             htmlFor="hero_form_number"
@@ -94,6 +123,7 @@ function ContactForm(props) {
             className="border-b-2 outline-none text-[17px] border-b-gray-300 transition-colors  duration-300     h-9  w-full bg-white bg-opacity-5"
             onFocus={handleFocusInput}
             onBlur={handleBlurInput}
+            onChange={(e) => setMail(e.target.value)}
           />
           <label
             htmlFor="hero_form_email"
@@ -108,6 +138,7 @@ function ContactForm(props) {
         <button
           type="submit"
           className="h-10 bg-black bg-opacity-70 font-bold text-white"
+          onClick={handleContactFormClick}
         >
           Request a Call Back
         </button>
