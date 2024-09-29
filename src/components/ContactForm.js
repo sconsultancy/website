@@ -36,12 +36,15 @@ function ContactForm(props) {
 
   const handleContactFormClick = async (e) => {
     e.preventDefault();
-    const res = await axios.post("http://localhost:5000/api/contact", {
-      fname,
-      lName,
-      mobNum,
-      mail,
-    });
+    const res = await axios.post(
+      "https://render-test-p5hr.onrender.com/api/contact",
+      {
+        fname,
+        lName,
+        mobNum,
+        mail,
+      }
+    );
     console.log(res);
 
     // console.log(fname, lName, mobNum, mail);
