@@ -9,7 +9,7 @@ function Hero({ type }: any) {
   return (
     <div className="w-full">
       <img
-        src="/hero/coffee.png"
+        src="hero/coffee.png"
         className="  max-md:-left-28 max-[473px]:w-48 max-[473px]:-top-24  -top-[120px]"
         alt=""
       />
