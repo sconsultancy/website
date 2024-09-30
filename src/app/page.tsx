@@ -183,13 +183,13 @@ export default function Home() {
             {/* Content */}
             {/* All Templates Content */}
             <WorkCard
-              imgSrc={"home/latest/rajesh.png"}
+              imgSrc={"home/latest/rajesh.jpg"}
               workType="Actor Portfolio"
               workDesc="Rajesh Ganesh Sharma"
               workLink="https://www.rajeshganeshsharma.in"
             ></WorkCard>
             <WorkCard
-              imgSrc={"home/latest/lms.png"}
+              imgSrc={"home/latest/lms.jpg"}
               workType="Learning Management System"
               workDesc="Orb Academy"
               workLink="https://www.orbacademy.in"
