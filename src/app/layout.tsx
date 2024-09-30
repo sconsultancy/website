@@ -24,7 +24,7 @@ export default function RootLayout({
         className={" main_body "}
         style={{
           backgroundImage:
-            "url(https://sconsultancy.github.io/website/hero_bg.png)",
+            "url(https://sconsultancy.github.io/website/hero_bg.jpg)",
         }}
       >
         <Navbar></Navbar>

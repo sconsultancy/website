@@ -40,7 +40,7 @@ function ContactUs() {
                   </svg>
                 </span>
                 <p className=" text-white ml-3 relative bottom-[5px]">
-                  +91-1234567890
+                  +91-8260673749
                 </p>
               </div>
               <div className="flex my-7">
@@ -55,7 +55,7 @@ function ContactUs() {
                 </svg>
 
                 <p className=" text-white ml-3 relative bottom-[5px]">
-                  hello@scsmail.com
+                  Sconsultancygroup21@gmail.com
                 </p>
               </div>
               <div className="flex my-7">
@@ -72,7 +72,7 @@ function ContactUs() {
                   />
                 </svg>
 
-                <p className=" text-white ml-3 relative bottom-[5px]">Raipur</p>
+                <p className=" text-white ml-3 relative bottom-[5px]">Pune</p>
               </div>
               {/* logo */}
               <div className="flex  absolute bottom-14 space-x-2">

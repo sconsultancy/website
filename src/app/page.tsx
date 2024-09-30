@@ -322,10 +322,17 @@ export default function Home() {
   );
 }
 /*
--> Write text in Progress Section
+-> Social Media Link in Contact us form
 -> Text in Service in Home 
-->Create BackEnd with Expressjs
-After 1st launch
+-> Add THankyou note to be written in End of Email Submission
+-> Add Emails and Contact details in DB
+-> Change Startup Consultancy to Digital Marketting
+-> Add terms Section 
+-> Add credit Section for Images Used
+-> About Section to Ellaborate Founders
+-> Design and Add 5 blogs for 3 weeks then 2 blogs per Week.
+
+
 ->(Tax Consultancy,Compliance Management, Accounting) => should be added after CA added to firm
 ->Some Apps to show in App Development's Latest Work Section
 -> the progress line should move with screen scroll in Progress Section
