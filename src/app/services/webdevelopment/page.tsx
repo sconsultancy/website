@@ -23,7 +23,7 @@ function WebDevelopment() {
             {/* All Templates Content */}
             <WorkCard
               imgSrc={
-                "https://sconsultancy.github.io/website/home/latest/rajesh.png"
+                "https://sconsultancy.github.io/website/home/latest/rajesh.jpg"
               }
               workType="Actor Portfolio"
               workDesc="Rajesh Ganesh Sharma"
@@ -31,7 +31,7 @@ function WebDevelopment() {
             ></WorkCard>
             <WorkCard
               imgSrc={
-                "https://sconsultancy.github.io/website/home/latest/lms.png"
+                "https://sconsultancy.github.io/website/home/latest/lms.jpg"
               }
               workType="Learning Management System"
               workDesc="Orb Academy"
