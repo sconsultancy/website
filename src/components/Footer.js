@@ -3,6 +3,7 @@
 import axios from "axios";
 import Link from "next/link";
 import React, { useState } from "react";
+import { toast, Toaster } from "sonner";
 
 function Footer() {
   const [input, setInput] = useState("");
@@ -13,11 +14,14 @@ function Footer() {
         email: input,
       }
     );
-
     console.log(res);
+    document.getElementById("footer_input").value = "";
+    toast.success("Thankyou For Contacting Us !!");
   };
   return (
     <div className=" bg-[#232526]    flex-col p-10 pb-5 w-full ">
+      <Toaster position="top-center" richColors />
+
       <div className="flex max-[581px]:grid max-[581px]:gap-6 w-full  justify-around items-center  mt-8 ">
         <h1 className=" text-2xl text-white tracking-wide  mb-3">
           {`"`}Unleash Your Potential{`"`}
@@ -69,6 +73,7 @@ function Footer() {
           <div className=" mt-3 pl-4 flex w-[500px]  max-sm:w-[80vw]   justify-between bg-[#2A2F39] rounded-full   ">
             <input
               type="text"
+              id="footer_input"
               placeholder="Your Work Email"
               onChange={(e) => setInput(e.target.value)}
               className=" bg-black bg-opacity-0 w-full  outline-none  font-semibold text-white text-opacity-40 py-4"

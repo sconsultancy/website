@@ -7,6 +7,7 @@ import Link from "next/link";
 import WorkCard from "@/components/WorkCard";
 import { useState } from "react";
 import axios from "axios";
+import { Toaster, toast } from "sonner";
 
 export default function Home() {
   const [input, setinput] = useState("");
@@ -32,23 +33,33 @@ export default function Home() {
       url: "/services/software-development",
     },
     {
-      name: "Startup Consultancy",
-      text: "Our startup consultancy services are designed to guide you through every stage of your startup journey.",
+      name: "Digital Marketting",
+      text: "Unlock growth with tailored digital marketing strategies designed to boost your brand's online presence. Drive results, enhance visibility, and maximize ROI",
       icon: "home/services/startup.svg",
-      url: "/services/startupconsultancy",
+      url: "/services/digitalmarketting",
     },
   ];
   const handleButtonClick = async () => {
+    toast.success("Thankyou For Contacting Us !!");
+
     const res = await axios.post(
       "https://render-test-p5hr.onrender.com/api/email",
       {
         email: input,
       }
     );
+
     console.log(res);
+
+    // Clearing the Email Input Field
+    (document.getElementById("email_input") as HTMLInputElement).value = "";
+
+    // Popup for Email Sent
   };
   return (
     <div className="pb-24 ">
+      <Toaster position="top-center" richColors />
+
       {/* Hero Section */}
       <div className="flex flex-col items-center relative top-[270px] max-[1100px]:top-[170px] pb-[150px] mb-[320px] ">
         <div className="relative">
@@ -71,6 +82,7 @@ export default function Home() {
                 <input
                   type="text"
                   placeholder="Your Work Email"
+                  id="email_input"
                   onChange={(e) => {
                     setinput(e.target.value);
                   }}
@@ -322,12 +334,10 @@ export default function Home() {
   );
 }
 /*
--> Social Media Link in Contact us form
--> Text in Service in Home 
 -> Add THankyou note to be written in End of Email Submission
 -> Add Emails and Contact details in DB
--> Change Startup Consultancy to Digital Marketting
 -> Add terms Section 
+-> Contact Form Fname not dropping
 -> Add credit Section for Images Used
 -> About Section to Ellaborate Founders
 -> Design and Add 5 blogs for 3 weeks then 2 blogs per Week.

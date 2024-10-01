@@ -2,6 +2,7 @@
 
 import axios from "axios";
 import React, { useState } from "react";
+import { toast, Toaster } from "sonner";
 
 function ContactForm(props) {
   const [fname, setFname] = useState("");
@@ -34,6 +35,13 @@ function ContactForm(props) {
     }
   };
 
+  const clearForm = () => {
+    document.getElementById("hero_form_fname").value = "";
+    document.getElementById("hero_form_lname").value = "";
+    document.getElementById("hero_form_number").value = "";
+    document.getElementById("hero_form_email").value = "";
+  };
+
   const handleContactFormClick = async (e) => {
     e.preventDefault();
     const res = await axios.post(
@@ -46,12 +54,16 @@ function ContactForm(props) {
       }
     );
     console.log(res);
+    clearForm();
+    toast.success("Thankyou For Contacting Us !!");
 
     // console.log(fname, lName, mobNum, mail);
   };
 
   return (
     <div className="">
+      <Toaster position="top-center" richColors />
+
       <form action="#" className="flex flex-col space-y-4 pt-3">
         <div className="relative flex flex-col">
           <input
