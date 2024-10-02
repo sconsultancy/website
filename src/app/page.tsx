@@ -204,7 +204,7 @@ export default function Home() {
               imgSrc={"home/latest/lms.jpg"}
               workType="Learning Management System"
               workDesc="Orb Academy"
-              workLink="https://www.orbacademy.in"
+              workLink="https://sconsultancy.github.io/orb-academy-main/"
             ></WorkCard>
           </div>
         </div>
@@ -334,7 +334,6 @@ export default function Home() {
   );
 }
 /*
--> Add THankyou note to be written in End of Email Submission
 -> Add Emails and Contact details in DB
 -> Add terms Section 
 -> Contact Form Fname not dropping
