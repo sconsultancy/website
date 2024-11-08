@@ -67,12 +67,12 @@ export default function Home() {
             <div className="  py-2 max-w-[137px] max-[473px]:max-w-[100px] rounded-full relative left-5 bg-black bg-opacity-10 max-[473px]:text-xs text-black text-opacity-60  text-center font-semibold ">
               BEST CHOICE
             </div>
-            <h1 className=" max-w-[400px] max-sm:max-w-[300px] pt-4 font-medium text-[64px] max-sm:text-[50px] max-[473px]:text-[40px] max-[400px]:text-4xl tracking-tighter leading-[65px] max-[473px]:leading-[43px] ">
+            <span className=" max-w-[400px] max-sm:max-w-[300px] pt-4 font-medium text-[64px] max-sm:text-[50px] max-[473px]:text-[40px] max-[400px]:text-4xl tracking-tighter leading-[65px] max-[473px]:leading-[43px] ">
               Unleash Your Potential with{" "}
-              <span className=" text-black text-opacity-70  font-semibold">
-                SCG
-              </span>
-            </h1>
+              <h1 className=" text-black text-opacity-70  font-semibold">
+                SConsultancy
+              </h1>
+            </span>
             <p className="  pt-5 text-xl max-sm:text-base max-[473px]:text-sm max-[400px]:text-xs tracking-tight leading-6 font-bold text-black text-opacity-40">
               Scale with interactive websites, custom tools, and growth hacks to
               supercharge your business
@@ -153,9 +153,9 @@ export default function Home() {
       {/* Services */}
       <div className="w-full flex justify-center ">
         <div className=" bg-[#353535] w-[85%] p-10 pb-20 flex flex-col items-center rounded-[60px] ">
-          <h1 className=" text-6xl max-sm:text-5xl text-white font-medium tracking-tighter mb-20 mt-8">
+          <h2 className=" text-6xl max-sm:text-5xl text-white font-medium tracking-tighter mb-20 mt-8">
             Services
-          </h1>
+          </h2>
           <div className=" w-[80%] max-[473px]:w-[85%] max-[400px]:w-[90%]">
             <div className=" grid  grid-cols-3 gap-8  max-2xl:grid-cols-2 max-lg:grid-cols-1  ">
               {servicesCardList.map((e, i) => {
@@ -172,9 +172,9 @@ export default function Home() {
                         alt=""
                       />
                     </div>
-                    <h1 className=" text-2xl max-sm:text-xl max-[473px]:text-lg max-[400px]:text-base text-white font-medium tracking-tighter  mb-3">
+                    <h4 className=" text-2xl max-sm:text-xl max-[473px]:text-lg max-[400px]:text-base text-white font-medium tracking-tighter  mb-3">
                       {e.name}
-                    </h1>
+                    </h4>
                     <p className=" text-xl max-sm:text-lg max-[473px]:text-base max-[400px]:text-sm text-white text-opacity-70">
                       {e.text}
                     </p>
@@ -188,9 +188,9 @@ export default function Home() {
       {/* Latest Works */}
       <div className=" mt-32  w-full flex justify-center  ">
         <div className="light_glass w-[85%] flex flex-col rounded-[50px] items-center pt-0  p-12">
-          <h1 className=" text-6xl max-sm:text-[50px] max-[473px]:text-[40px] max-[400px]:text-4xl font-semibold tracking-tighter my-10">
+          <h2 className=" text-6xl max-sm:text-[50px] max-[473px]:text-[40px] max-[400px]:text-4xl font-semibold tracking-tighter my-10">
             Our Latest Works
-          </h1>
+          </h2>
           <div className="w-full  flex max-lg:flex-col max-lg:items-center max-lg:space-y-12 justify-evenly mt-12">
             {/* Content */}
             {/* All Templates Content */}
@@ -213,18 +213,18 @@ export default function Home() {
       {/* Contact Us */}
       <div className=" flex  mt-32 w-full justify-center max-lg:hidden">
         <div className=" light_glass w-[85%] rounded-2xl flex flex-col items-center">
-          <h1 className="text-6xl font-semibold tracking-tighter my-5 mt-12">
+          <h2 className="text-6xl font-semibold tracking-tighter my-5 mt-12">
             Contact Us
-          </h1>
+          </h2>
           <p className=" text-xl font-semibold tracking-tighter text-black text-opacity-70 mb-10">
             Any Question or remarks? Just write us a message!
           </p>
           <div className=" bg-white flex items-center mb-16 p-10">
             {/* left section */}
             <div className="violet_glass h-[457px] w-[350px] relative overflow-hidden mb-6 rounded-xl p-4  ">
-              <h1 className=" text-2xl text-white font-medium tracking-tighter  mb-3 mt-4">
+              <h2 className=" text-2xl text-white font-medium tracking-tighter  mb-3 mt-4">
                 Contact Information
-              </h1>
+              </h2>
               <p className=" text-white text-opacity-75 tracking-tight">
                 Fill up the form and our Team will get back to you within 24
                 hours.
