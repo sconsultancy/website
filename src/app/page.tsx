@@ -100,54 +100,54 @@ export default function Home() {
           <img
             src="hero/coffee.png"
             className=" absolute -left-[200px] max-md:-left-28 max-[473px]:w-48 max-[473px]:-top-24  -top-[120px]"
-            alt=""
+            alt="Coffee Image"
           />
           <img
             src="hero/blue-ball.png"
             className=" absolute top-2 right-[50px] z-10"
-            alt=""
+            alt=" Blue Ball Image"
           />
           <img
             src="hero/half-blue-ball.png"
             className=" absolute top-[150px] -left-[40px] max-md:left-0 z-10"
-            alt=""
+            alt="Half Blue Image"
           />
 
           <img
             src="hero/plant.png"
             className=" absolute top-[100px] -right-[80px] z-10 hidden"
-            alt=""
+            alt="Plant image"
           />
 
           <img
             src="hero/cred-card.png"
             className="absolute top-[325px] -left-[190px] max-md:-left-28 z-10 "
-            alt=""
+            alt=" Credit Card Image"
           />
         </div>
 
         <img
           src="hero/red-ball.png"
           className=" absolute top-[60px] right-[89px]"
-          alt=""
+          alt="Red Ball Image"
         />
         <div className="light_glass h-[180px] w-[180px] rounded-xl absolute top-[100px] right-[139px] z-30 flex  justify-center items-center max-[1200px]:hidden  ">
-          <img src="hero/graph.png" alt="" />
+          <img src="hero/graph.png" alt="Growth Graph Image" />
         </div>
         <img
           src="hero/black-ball.png"
           className="absolute bottom-[115px] right-[31.75%]"
-          alt=""
+          alt="Black Ball Image"
         />
         <img
           src="hero/color-ball.png"
           className="absolute top-[140px] right-[199px] z-10  max-[1200px]:hidden"
-          alt=""
+          alt="Color Ball Image"
         />
         <img
           src="hero/color-ball.png"
           className="absolute bottom-[175px] left-[35%] z-10"
-          alt=""
+          alt="Color Ball Image"
         />
       </div>
       {/* Services */}
@@ -169,7 +169,7 @@ export default function Home() {
                       <img
                         className="w-12 max-sm:w-10  fill-[#73C1C3]"
                         src={e.icon}
-                        alt=""
+                        alt={`${e.name}`}
                       />
                     </div>
                     <h4 className=" text-2xl max-sm:text-xl max-[473px]:text-lg max-[400px]:text-base text-white font-medium tracking-tighter  mb-3">

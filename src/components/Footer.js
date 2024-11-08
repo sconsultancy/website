@@ -23,9 +23,9 @@ function Footer() {
       <Toaster position="top-center" richColors />
 
       <div className="flex max-[581px]:grid max-[581px]:gap-6 w-full  justify-around items-center  mt-8 ">
-        <h1 className=" text-2xl text-white tracking-wide  mb-3">
+        <p className=" text-2xl text-white tracking-wide  mb-3">
           {`"`}Unleash Your Potential{`"`}
-        </h1>
+        </p>
         <div className="flex bottom-14 space-x-8 justify-center">
           <Link href={"https://www.facebook.com/profile.php?id=61566453275005"}>
             <svg
@@ -69,7 +69,7 @@ function Footer() {
 
       <div className=" flex justify-evenly max-lg:flex-col max-lg:items-center max-lg:space-y-12  mt-10">
         <div className="flex flex-col justify-center">
-          <h1 className=" font-medium text-white text-2xl pl-1 inline">SCG</h1>
+          <p className=" font-medium text-white text-2xl pl-1 inline">SCG</p>
           <div className=" mt-3 pl-4 flex w-[500px]  max-sm:w-[80vw]   justify-between bg-[#2A2F39] rounded-full   ">
             <input
               type="text"
@@ -89,22 +89,22 @@ function Footer() {
 
         <div className="flex max-sm:flex-col space-x-8 max-sm:space-y-8 text-center text-white ">
           <div className="flex flex-col space-y-3 ">
-            <h1 className=" text-xl  font-normal">DESIGN</h1>
-            <h3 className="pt-2 opacity-60 text-md">Digital Branding</h3>
-            <h3 className="opacity-60 text-md">E-commerce Design</h3>
-            <h3 className="opacity-60 text-md">UI/UX Design</h3>
+            <h3 className=" text-xl  font-normal">DESIGN</h3>
+            <p className="pt-2 opacity-60 text-md">Digital Branding</p>
+            <p className="opacity-60 text-md">E-commerce Design</p>
+            <p className="opacity-60 text-md">UI/UX Design</p>
           </div>
           <div className="flex flex-col space-y-3">
-            <h1 className=" text-xl  font-normal">DEVELOP</h1>
-            <h3 className="pt-2 opacity-60 text-md">E-commerce Development</h3>
-            <h3 className="opacity-60 text-md">Web Development</h3>
-            <h3 className="opacity-60 text-md">App Development</h3>
+            <h3 className=" text-xl  font-normal">DEVELOP</h3>
+            <p className="pt-2 opacity-60 text-md">E-commerce Development</p>
+            <p className="opacity-60 text-md">Web Development</p>
+            <p className="opacity-60 text-md">App Development</p>
           </div>
           <div className="flex flex-col space-y-3">
-            <h1 className=" text-xl  font-normal">GROW</h1>
-            <h3 className="pt-2 opacity-60 text-md">Digital Marketting</h3>
-            <h3 className="opacity-60 text-md">SEO</h3>
-            <h3 className="opacity-60 text-md">A-B Testing</h3>
+            <h3 className=" text-xl  font-normal">GROW</h3>
+            <p className="pt-2 opacity-60 text-md">Digital Marketting</p>
+            <p className="opacity-60 text-md">SEO</p>
+            <p className="opacity-60 text-md">A-B Testing</p>
           </div>
         </div>
       </div>
@@ -112,10 +112,10 @@ function Footer() {
         <div className=" ">SCG</div>
         <div className="flex space-x-5">
           <Link href={"/terms"}>
-            <h3>Terms</h3>
+            <p>Terms</p>
           </Link>
           <Link href={"/credits"}>
-            <h3>Credits</h3>
+            <p>Credits</p>
           </Link>
         </div>
       </div>

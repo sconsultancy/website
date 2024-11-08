@@ -18,7 +18,7 @@ function WorkCard({ imgSrc, workType, workDesc, workLink }: any) {
         <img
           src={imgSrc}
           className=" rounded-xl h-[400px] max-[460px]:h-[90vw] "
-          alt=""
+          alt={`${workDesc}`}
         />
         <div
           className={` absolute ${
