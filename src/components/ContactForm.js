@@ -62,8 +62,6 @@ function ContactForm(props) {
 
   return (
     <div className="">
-      <Toaster position="top-center" richColors />
-
       <form action="#" className="flex flex-col space-y-4 pt-3">
         <div className="relative flex flex-col">
           <input

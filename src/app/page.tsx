@@ -20,23 +20,34 @@ export default function Home() {
       url: "/services/webdevelopment",
     },
     {
+      name: "Digital Marketting",
+      text: "Unlock growth with tailored digital marketing strategies designed to boost your brand's online presence. Drive results, enhance visibility, and maximize ROI",
+      icon: "home/services/startup.svg",
+      url: "/services/digitalmarketting",
+    },
+    {
       name: "App Development",
       text: "Elevate your brand with our custom mobile app development services.",
       icon: "home/services/appdev.svg",
       url: "/services/appdevelopment",
     },
-
+    {
+      name: "Accounting",
+      text: "Reliable bookkeeping and detailed financial reporting, giving you insights that drive growth and profitability",
+      icon: "home/services/accounting.svg",
+      url: "/services/accounting",
+    },
+    {
+      name: "Tax Consultancy",
+      text: "Simplifying tax complexities with expert solutions tailored for individuals and businesses alike",
+      icon: "home/services/tax.svg",
+      url: "/services/tax-consultancy",
+    },
     {
       name: "Software Development",
       text: "Empower your business with tailor-made software solutions for your organizational goals.",
       icon: "home/services/software.svg",
       url: "/services/software-development",
-    },
-    {
-      name: "Digital Marketting",
-      text: "Unlock growth with tailored digital marketing strategies designed to boost your brand's online presence. Drive results, enhance visibility, and maximize ROI",
-      icon: "home/services/startup.svg",
-      url: "/services/digitalmarketting",
     },
   ];
   const handleButtonClick = async () => {
@@ -203,8 +214,8 @@ export default function Home() {
             <WorkCard
               imgSrc={"home/latest/lms.jpg"}
               workType="Learning Management System"
-              workDesc="Orb Academy"
-              workLink="https://sconsultancy.github.io/orb-academy-main/"
+              workDesc="Wizer Skills"
+              workLink="https://wizerskills.online/"
             ></WorkCard>
           </div>
         </div>
@@ -245,7 +256,7 @@ export default function Home() {
                   </svg>
                 </span>
                 <p className=" text-white ml-3 relative bottom-[5px]">
-                  +91-1234567890
+                  +91-8260673749
                 </p>
               </div>
               <div className="flex my-7">
@@ -260,7 +271,7 @@ export default function Home() {
                 </svg>
 
                 <p className=" text-white ml-3 relative bottom-[5px]">
-                  hello@scsmail.com
+                  support@sconsultancygroup.in
                 </p>
               </div>
               <div className="flex my-7">
@@ -293,7 +304,7 @@ export default function Home() {
                 <Link href={"https://youtube.com"}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-5 fill-[#ffffff] hover:fill-[#FA949D]"
+                    className="w-5 fill-[#111010] hover:fill-[#FA949D]"
                     viewBox="0 0 24 24"
                   >
                     <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />

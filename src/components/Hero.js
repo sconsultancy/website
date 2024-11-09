@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
-function Hero(type) {
+function Hero({ type }) {
   console.log(type);
   return (
     <div className="w-full">

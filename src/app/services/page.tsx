@@ -8,31 +8,38 @@ function Services() {
     {
       name: "Web Development",
       text: "Transform your online presence with our cutting-edge web design and development services.",
-
-      icon: "services/webdev.svg",
+      icon: "home/services/webdev.svg",
       url: "/services/webdevelopment",
+    },
+    {
+      name: "Digital Marketting",
+      text: "Unlock growth with tailored digital marketing strategies designed to boost your brand's online presence. Drive results, enhance visibility, and maximize ROI",
+      icon: "home/services/startup.svg",
+      url: "/services/digitalmarketting",
     },
     {
       name: "App Development",
       text: "Elevate your brand with our custom mobile app development services.",
-
-      icon: "services/appdev.svg",
+      icon: "home/services/appdev.svg",
       url: "/services/appdevelopment",
     },
-
+    {
+      name: "Accounting",
+      text: "Reliable bookkeeping and detailed financial reporting, giving you insights that drive growth and profitability",
+      icon: "home/services/accounting.svg",
+      url: "/services/accounting",
+    },
+    {
+      name: "Tax Consultancy",
+      text: "Simplifying tax complexities with expert solutions tailored for individuals and businesses alike",
+      icon: "home/services/tax.svg",
+      url: "/services/tax-consultancy",
+    },
     {
       name: "Software Development",
       text: "Empower your business with tailor-made software solutions for your organizational goals.",
-
-      icon: "services/software.svg",
+      icon: "home/services/software.svg",
       url: "/services/software-development",
-    },
-    {
-      name: "Startup Consultancy",
-      text: "Our startup consultancy services are designed to guide you through every stage of your startup journey.",
-
-      icon: "services/startup.svg",
-      url: "/services/startupconsultancy",
     },
   ];
 
