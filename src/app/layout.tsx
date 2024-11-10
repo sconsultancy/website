@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 // import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sconsultancygroup.com"),
   title: "Sconsultancy Group",
   description:
     "Unleash Your Potential with SConsultancy.Scale with interactive websites, custom tools, and growth hacks to supercharge your business",

@@ -6,6 +6,32 @@ import Image from "next/image";
 
 function Hero({ type }) {
   console.log(type);
+
+  const setHeader = (type) => {
+    let content;
+
+    switch (type) {
+      case "digital-marketting":
+        content = "";
+
+        break;
+      case "website":
+        content = "Websites";
+
+        break;
+      case "app":
+        content = "Apps";
+
+        break;
+
+      default:
+        content = "Softwares";
+        break;
+    }
+
+    return content;
+  };
+
   return (
     <div className="w-full">
       {/* Hero Section */}
@@ -16,19 +42,18 @@ function Hero({ type }) {
               BEST CHOICE
             </div>
             <h1 className=" max-w-[400px] max-sm:max-w-[300px] pt-4 font-medium text-[64px] max-sm:text-[50px] max-[473px]:text-[40px] max-[400px]:text-4xl tracking-tighter leading-[65px] max-[473px]:leading-[43px] ">
-              Unleash Your Potential with{" "}
+              {type == "digital-marketting"
+                ? "Transform Your Brand"
+                : "Unleash Your Potential"}{" "}
+              with{" "}
               <span className=" text-black text-opacity-70  font-semibold">
-                SCG{" "}
-                {type == "website"
-                  ? "Websites"
-                  : type == "app"
-                  ? "Apps"
-                  : "Softwares"}
+                SCG {setHeader(type)}
               </span>
             </h1>
             <p className="  pt-5 text-xl max-sm:text-base max-[473px]:text-sm max-[400px]:text-xs tracking-tight leading-6 font-bold text-black text-opacity-40">
-              Scale with interactive websites, custom tools, and growth hacks to
-              supercharge your business
+              {type == "digital-marketting"
+                ? "We help businesses thrive with cutting-edge digital marketing strategies that boost visibility, engagement, and sales."
+                : "Scale with interactive websites, custom tools, and growth hacks to supercharge your business"}
             </p>
             <div className="relative flex mb-10 w-full max-[550px]:flex-col items-center">
               <div className=" mt-8 pl-4  pr-3 flex w-full  justify-between  border border-black   rounded-full  ">

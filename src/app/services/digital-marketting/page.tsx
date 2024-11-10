@@ -1,10 +1,11 @@
 import ComingSoon from "@/components/ComingSoon";
+import Hero from "@/components/Hero";
 import React from "react";
 
 function DigitalMarketting() {
   return (
     <div>
-      <ComingSoon></ComingSoon>
+      <Hero type="digital-marketting"></Hero>
     </div>
   );
 }

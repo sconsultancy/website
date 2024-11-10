@@ -9,13 +9,13 @@ function Services() {
       name: "Web Development",
       text: "Transform your online presence with our cutting-edge web design and development services.",
       icon: "home/services/webdev.svg",
-      url: "/services/webdevelopment",
+      url: "/services/website-development",
     },
     {
       name: "Digital Marketting",
       text: "Unlock growth with tailored digital marketing strategies designed to boost your brand's online presence. Drive results, enhance visibility, and maximize ROI",
       icon: "home/services/startup.svg",
-      url: "/services/digitalmarketting",
+      url: "/services/digital-marketting",
     },
     {
       name: "App Development",
