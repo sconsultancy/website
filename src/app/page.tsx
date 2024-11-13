@@ -8,6 +8,7 @@ import WorkCard from "@/components/WorkCard";
 import { useState } from "react";
 import axios from "axios";
 import { Toaster, toast } from "sonner";
+import WhyUsCard from "@/components/WhyUsCard";
 
 export default function Home() {
   const [input, setinput] = useState("");
@@ -50,6 +51,35 @@ export default function Home() {
       url: "/services/software-development",
     },
   ];
+
+  const whyUsList = [
+    {
+      header: "Customized Solutions",
+      content: "We design strategies that fit your specific needs and goals.",
+    },
+    {
+      header: "Experienced Team",
+      content:
+        "Our consultants bring years of industry experience and know-how.",
+    },
+    {
+      header: "Data-Backed Decisions",
+      content: "We rely on data to create smart, effective solutions.",
+    },
+    {
+      header: "Collaborative Style",
+      content: "We work closely with your team to ensure everyone’s on board.",
+    },
+    {
+      header: "Flexible Approach",
+      content: "We stay adaptable to adjust strategies as your needs evolve.",
+    },
+    {
+      header: "Results-Focused",
+      content: "Our success is measured by your success, plain and simple.",
+    },
+  ];
+
   const handleButtonClick = async () => {
     toast.success("Thankyou For Contacting Us !!");
 
@@ -67,6 +97,33 @@ export default function Home() {
 
     // Popup for Email Sent
   };
+
+  const dottedLine = () => {
+    return (
+      <div className="flex space-x-3">
+        <div className="h-[2px] w-3 bg-black relative top-4 max-[890px]:hidden "></div>
+        <div className="h-[2px] w-6 bg-black relative top-4 max-lg:hidden"></div>
+        <div className="h-[2px] w-6 bg-black relative top-4 max-[945px]:hidden"></div>
+        <div className="h-[2px] w-6 bg-black relative top-4"></div>
+        <div className="h-[2px] w-3 bg-black relative top-4 max-[890px]:hidden "></div>
+      </div>
+    );
+  };
+
+  const processUnit = (num: String, h2: String, text: String) => {
+    return (
+      <div className=" flex  flex-col items-center max-w-[240px] text-center">
+        <span className=" w-8 text-center flex items-center justify-center h-8 rounded-full bg-black bg-opacity-80 text-white">
+          {num}
+        </span>
+        <h2 className=" mt-8 text-xl font-bold tracking-tight">{h2}</h2>
+        <div className=" mt-4 text-lg text-black text-opacity-75 font-semibold tracking-tight">
+          {text}
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="pb-24 ">
       <Toaster position="top-center" richColors />
@@ -102,7 +159,7 @@ export default function Home() {
               </div>
               <button
                 onClick={handleButtonClick}
-                className=" absolute max-[550px]:static max-[550px]:mt-3 h-[57px] top-8 -right-4  bg-black text-white rounded-full px-6  py-4 text-sm max-[472px]:text-xs font-medium"
+                className=" absolute max-[550px]:static max-[550px]:mt-3 h-[58px] top-8 -right-4  bg-black text-white rounded-full px-6  py-4 text-sm max-[472px]:text-xs font-medium"
               >
                 Get Started
               </button>
@@ -161,6 +218,84 @@ export default function Home() {
           alt="Color Ball Image"
         />
       </div>
+      {/* Process */}
+      <div className=" flex flex-col bg-white items-center pb-14">
+        <div className=" bg-white text-black flex flex-col items-center  py-10  pb-20">
+          <div className="flex space-x-2.5 py-3 ">
+            <div className="h-[2px] w-6 bg-black relative top-4"></div>
+            <h3 className=" text-xl font-bold tracking-tight">Process</h3>
+            <div className="h-[2px] w-6 bg-black relative top-4"></div>
+          </div>
+
+          <h1 className=" text-[40px] font-bold -tracking-tighter py-2">
+            How it works
+          </h1>
+          <div className="flex max-[700px]:flex-col  mt-16">
+            <span className=" flex">
+              <span className=" min-[700px]:hidden">{dottedLine()}</span>
+              {processUnit(
+                "1",
+                "Discovery",
+                `We begin by understanding your goals and challenges.`
+              )}
+              <span className=" min-[700px]:hidden">{dottedLine()}</span>{" "}
+            </span>
+
+            <span className=" max-[700px]:hidden">{dottedLine()}</span>
+            <span className=" flex max-[700px]:mt-12">
+              <span className=" min-[700px]:hidden">{dottedLine()}</span>{" "}
+              {processUnit(
+                "2",
+                "Implementation",
+                `Our team works on execution and integration into your operations.`
+              )}
+              <span className=" min-[700px]:hidden">{dottedLine()}</span>{" "}
+            </span>
+
+            <span className=" max-[700px]:hidden"> {dottedLine()}</span>
+            <span className=" flex max-[700px]:mt-12">
+              <span className=" min-[700px]:hidden">{dottedLine()}</span>{" "}
+              {processUnit(
+                "3",
+                "Improvement",
+                "We assess the impact and ensure success and progress."
+              )}
+              <span className=" min-[700px]:hidden">{dottedLine()}</span>{" "}
+            </span>
+          </div>
+        </div>
+        <Link href={"/contactus"}>
+          <button
+            // onClick={handleButtonClick}
+            className="  h-[58px] max-w-sm  bg-black text-white rounded-full px-6  py-4 text-sm max-[472px]:text-xs font-medium"
+          >
+            Request a Callback
+          </button>
+        </Link>
+      </div>
+
+      {/* Why Us */}
+      <div className=" bg-white p-5 pb-14 mb-14">
+        <div className=" flex justify-center">
+          <h2 className=" text-6xl font-semibold">
+            Why our Services are Different
+          </h2>
+          {/* 
+          Here add Number of Clients
+          
+          <div></div> */}
+        </div>
+        <div className=" grid grid-cols-3 gap-8 mt-14 max-[1110px]:grid-cols-2 max-[800px]:grid-cols-1  ">
+          {whyUsList.map((e, i) => {
+            return (
+              <span key={i}>
+                <WhyUsCard header={e.header} content={e.content}></WhyUsCard>
+              </span>
+            );
+          })}
+        </div>
+      </div>
+
       {/* Services */}
       <div className="w-full flex justify-center ">
         <div className=" bg-[#353535] w-[85%] p-10 pb-20 flex flex-col items-center rounded-[60px] ">
