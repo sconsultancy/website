@@ -56,7 +56,7 @@ function DigitalMarketting() {
               Pay-Per-Click {"(PPC)"} Advertising
             </h3>
             <p className=" text-black text-opacity-70 max-w-[680px]">
-              "We design and manage targeted PPC campaigns that drive immediate
+              We design and manage targeted PPC campaigns that drive immediate
               results. Whether you’re looking to boost sales, increase website
               traffic, or improve brand awareness, our pay-per-click services
               deliver highly targeted leads at a controlled budget.
