@@ -12,7 +12,7 @@ function Hero({ type }) {
 
     switch (type) {
       case "digital-marketting":
-        content = "";
+        content = "Digital Marketting";
 
         break;
       case "website":
@@ -41,15 +41,15 @@ function Hero({ type }) {
             <div className="  py-2 max-w-[137px] max-[473px]:max-w-[100px] rounded-full relative left-5 bg-black bg-opacity-10 max-[473px]:text-xs text-black text-opacity-60  text-center font-semibold ">
               BEST CHOICE
             </div>
-            <h1 className=" max-w-[400px] max-sm:max-w-[300px] pt-4 font-medium text-[64px] max-sm:text-[50px] max-[473px]:text-[40px] max-[400px]:text-4xl tracking-tighter leading-[65px] max-[473px]:leading-[43px] ">
+            <p className=" max-w-[400px] max-sm:max-w-[300px] pt-4 font-medium text-[64px] max-sm:text-[50px] max-[473px]:text-[40px] max-[400px]:text-4xl tracking-tighter leading-[65px] max-[473px]:leading-[43px] ">
               {type == "digital-marketting"
                 ? "Transform Your Brand"
                 : "Unleash Your Potential"}{" "}
               with{" "}
-              <span className=" text-black text-opacity-70  font-semibold">
+              <h1 className=" text-black text-opacity-70  font-semibold">
                 SCG {setHeader(type)}
-              </span>
-            </h1>
+              </h1>
+            </p>
             <p className="  pt-5 text-xl max-sm:text-base max-[473px]:text-sm max-[400px]:text-xs tracking-tight leading-6 font-bold text-black text-opacity-40">
               {type == "digital-marketting"
                 ? "We help businesses thrive with cutting-edge digital marketing strategies that boost visibility, engagement, and sales."
@@ -63,7 +63,7 @@ function Hero({ type }) {
                   className=" bg-black bg-opacity-0  outline-none  font-semibold text-black text-opacity-50 max-[472px]:text-sm py-4 max-[472px]:py-3 w-[70%] max-[550px]:w-[100%]"
                 />
               </div>
-              <button className=" absolute max-[550px]:static max-[550px]:mt-3 h-[57px] top-8 -right-4  bg-black text-white rounded-full px-6  py-4 text-sm max-[472px]:text-xs font-medium">
+              <button className=" absolute max-[550px]:static max-[550px]:mt-3 h-[58px] top-8 -right-4  bg-black text-white rounded-full px-6  py-4 text-sm max-[472px]:text-xs font-medium">
                 Get Started
               </button>
             </div>

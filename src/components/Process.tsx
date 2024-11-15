@@ -4,11 +4,11 @@ function Process({ type }: any) {
   const dottedLine = () => {
     return (
       <div className="flex space-x-3">
-        <div className="h-[2px] w-3 bg-black relative top-4"></div>
+        <div className="h-[2px] w-3 bg-black relative top-4 max-[890px]:hidden "></div>
+        <div className="h-[2px] w-6 bg-black relative top-4 max-lg:hidden"></div>
+        <div className="h-[2px] w-6 bg-black relative top-4 max-[945px]:hidden"></div>
         <div className="h-[2px] w-6 bg-black relative top-4"></div>
-        <div className="h-[2px] w-6 bg-black relative top-4"></div>
-        <div className="h-[2px] w-6 bg-black relative top-4"></div>
-        <div className="h-[2px] w-3 bg-black relative top-4"></div>
+        <div className="h-[2px] w-3 bg-black relative top-4 max-[890px]:hidden "></div>
       </div>
     );
   };
@@ -38,35 +38,52 @@ function Process({ type }: any) {
         <h1 className=" text-[40px] font-bold -tracking-tighter py-2">
           How it works
         </h1>
-        <div className="flex mt-16">
-          {processUnit(
-            "1",
-            "Design",
-            `  ${
-              type == "website"
-                ? " We design visually stunning, user-friendly websites"
-                : type == "app"
-                ? " We design visually stunning, user-friendly apps"
-                : type == "software"
-                ? "We design visually stunning, user-friendly softwares"
-                : "We design the best possible systems"
-            }.`
-          )}
-          {dottedLine()}
-          {processUnit(
-            "2",
-            "Develop",
-            `We ${
-              type == "startup" ? "Achieve" : "Develop"
-            } it fast and effective.`
-          )}
+        <div className="flex mt-16 max-[700px]:flex-col  ">
+          <span className=" flex">
+            <span className=" min-[700px]:hidden">{dottedLine()}</span>
+            {processUnit(
+              "1",
+              `${type == "digital-marketting" ? "Discover" : "Design"}`,
+              `  ${
+                type == "website"
+                  ? " We design visually stunning, user-friendly websites"
+                  : type == "app"
+                  ? " We design visually stunning, user-friendly apps"
+                  : type == "software"
+                  ? "We design visually stunning, user-friendly softwares"
+                  : type == "digital-marketting"
+                  ? "Understanding your business, target audience, and goals."
+                  : "We design the best possible systems"
+              }.`
+            )}
+            <span className=" min-[700px]:hidden">{dottedLine()}</span>{" "}
+          </span>
 
-          {dottedLine()}
-          {processUnit(
-            "3",
-            "Enjoy",
-            "Enjoy the result and maximise your potential."
-          )}
+          <span className=" max-[700px]:hidden">{dottedLine()}</span>
+
+          <span className=" flex max-[700px]:mt-12">
+            <span className=" min-[700px]:hidden">{dottedLine()}</span>{" "}
+            {processUnit(
+              "2",
+              `${type == "digital-marketting" ? "Implement" : "Develop"}`, //develop
+              `We ${
+                type == "startup" ? "Achieve" : "Develop"
+              } it fast and effective.`
+            )}
+            <span className=" min-[700px]:hidden">{dottedLine()}</span>{" "}
+          </span>
+
+          <span className=" max-[700px]:hidden"> {dottedLine()}</span>
+
+          <span className=" flex max-[700px]:mt-12">
+            <span className=" min-[700px]:hidden">{dottedLine()}</span>{" "}
+            {processUnit(
+              "3",
+              "Enjoy",
+              "Enjoy the result and maximise your potential."
+            )}
+            <span className=" min-[700px]:hidden">{dottedLine()}</span>{" "}
+          </span>
         </div>
       </div>
     </div>
@@ -74,3 +91,32 @@ function Process({ type }: any) {
 }
 
 export default Process;
+
+/*
+
+
+         
+
+            
+            
+          </div>
+        </div>
+        <Link href={"/contactus"}>
+          <button
+            // onClick={handleButtonClick}
+            className="  h-[58px] max-w-sm  bg-black text-white rounded-full px-6  py-4 text-sm max-[472px]:text-xs font-medium"
+          >
+            Request a Callback
+          </button>
+        </Link>
+      </div>
+
+
+
+
+
+
+
+
+
+*/
