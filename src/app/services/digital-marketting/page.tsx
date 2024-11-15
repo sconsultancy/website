@@ -85,7 +85,6 @@ function DigitalMarketting() {
           <img
             src="/services-image/digital-marketting/ppc.png"
             alt=" image of Pay per click on Digital Marketting"
-            width={"auto"}
           />
         </div>
         <div className=" flex items-center justify-evenly w-full">
