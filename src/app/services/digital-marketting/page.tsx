@@ -1,6 +1,7 @@
 import ComingSoon from "@/components/ComingSoon";
 import Hero from "@/components/Hero";
 import Process from "@/components/Process";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -84,6 +85,7 @@ function DigitalMarketting() {
           <img
             src="/services-image/digital-marketting/ppc.png"
             alt=" image of Pay per click on Digital Marketting"
+            width={"auto"}
           />
         </div>
         <div className=" flex items-center justify-evenly w-full">
