@@ -15,6 +15,12 @@ export default function Home() {
 
   const servicesCardList = [
     {
+      name: "Data Analytics",
+      text: "We help businesses turn raw data into actionable insights through analysis, visualization, and predictive modeling.",
+      icon: "home/services/data.svg",
+      url: "/services/data-analytics",
+    },
+    {
       name: "Web Development",
       text: "Transform your online presence with our cutting-edge web design and development services.",
       icon: "home/services/webdev.svg",
