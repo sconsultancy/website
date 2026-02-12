@@ -65,7 +65,7 @@ function Navbar() {
       <div className="flex bg-white py-5  w-5/6   self-center justify-between px-5 rounded-full max-[1100px]:hidden">
         <div className="flex items-center">
           <Link href={"/"} className=" font-black text-2xl">
-            <Image src={"/logo.svg"} width={60} height={60}></Image>
+            <img src={"/logo.svg"} width={60} height={60}></img>
             {/* SVG */}
           </Link>
         </div>
