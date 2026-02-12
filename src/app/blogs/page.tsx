@@ -1,3 +1,4 @@
+"use client";
 import ComingSoon from "@/components/ComingSoon";
 import Link from "next/link";
 import React, { useEffect } from "react";
